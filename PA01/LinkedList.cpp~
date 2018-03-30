@@ -1,0 +1,145 @@
+// Class Implemntation File Information ///////////////////////////////////////
+/**
+  * @file LinkedList.cpp
+  *
+  * @brief Implementation file for LinkedList class
+  *
+  * @author Alex Kastanek
+  *
+  * @details Implements all member methods of the LinkedList class
+  *
+  * @version 1.00
+  *  		 C.S. Student (14 September 2016)
+  *			 Initial development and testing of LinkedList class
+  *
+  * @note Requires LinkedList.h
+  *
+  * @note Adapted from Frank M. Carrano and Timothy M. Henry Copyright (c) 0217
+  *       Pearson Education, Hoboken, New Jersey.
+  *
+  */
+
+#include "LinkedList.h"
+
+template<class ItemType>
+Node<ItemType>* LinkedList<ItemType>::getNodeAt(int position) const
+{
+	//different from TB: not debugging check of precondition
+	Node<ItemType>* curPtr = headPtr;
+	for (int current = 1; current < position; current++)
+		curPtr = curPtr->getNext();
+
+	return curPtr;
+}
+
+template<class ItemType>
+LinkedList<ItemType>::LinkedList() : headPtr(NULL), itemCount(0)
+{
+}
+
+template<class ItemType>
+LinkedList<ItemType>::~LinkedList()
+{
+	clear();
+}
+
+template<class ItemType>
+bool LinkedList<ItemType>::isEmpty() const
+{
+	return itemCount == 0;
+}
+
+template<class ItemType>
+int LinkedList<ItemType>::getLength() const
+{
+	return itemCount;
+}
+
+template<class ItemType>
+bool LinkedList<ItemType>::insert(int newPosition, const ItemType& newEntry)
+{
+	bool ableToInsert = (newPosition >= 1) && (newPosition <= itemCount + 1);
+	if (ableToInsert)
+	{
+		Node<ItemType>* newNodePtr = new Node<ItemType>(newEntry);
+
+		if (newPosition == 1)
+		{
+			newNodePtr->setNext(headPtr);
+			headPtr = newNodePtr;
+		}
+		else
+		{
+			Node<ItemType>* prevPtr = getNodeAt(newPosition - 1);
+
+			newNodePtr->setNext(prevPtr->getNext());
+			prevPtr->setNext(newNodePtr);
+		}
+		itemCount++;
+	}
+	return ableToInsert;
+}
+
+template<class ItemType>
+bool LinkedList<ItemType>::remove(int position)
+{
+	bool ableToRemove = (position >= 1) && (position <= itemCount);
+	if (ableToRemove)
+	{
+		Node<ItemType>* curPtr = NULL;
+		if (position == 1)
+		{
+			curPtr = headPtr;
+			headPtr = headPtr->getNext();
+		}
+		else
+		{
+			Node<ItemType>* prevPtr = getNodeAt(position - 1);
+			curPtr = prevPtr->getNext();
+			prevPtr->setNext(curPtr->getNext());
+		}
+		curPtr->setNext(NULL);
+		delete curPtr;
+		curPtr = NULL;
+
+		itemCount--;
+	}
+	return ableToRemove;
+}
+
+template<class ItemType>
+void LinkedList<ItemType>::clear()
+{
+	while (!isEmpty())
+		remove(1);
+}
+
+template<class ItemType>
+ItemType LinkedList<ItemType>::getEntry(int position) const throw(PrecondViolatedExcept)
+{
+	bool ableToGet = (position >= 1) && (position <= itemCount);
+	if (ableToGet)
+	{
+		Node<ItemType>* nodePtr = getNodeAt(position);
+		return nodePtr->getItem();
+	}
+	else
+	{
+		std::string message = "getEntry() called with an empty list or ";
+		message = message + "invalid position.";
+		throw(PrecondViolatedExcept(message));
+	}
+}
+
+template<class ItemType>
+ItemType LinkedList<ItemType>::replace(int position, const ItemType& newEntry) throw(PrecondViolatedExcept)
+{
+	Node<ItemType>* nodePtr = getNodeAt(position);
+	ItemType replacedItem = nodePtr->getItem();
+
+	remove(position);
+
+	insert(position, newEntry);
+
+	return replacedItem;
+}

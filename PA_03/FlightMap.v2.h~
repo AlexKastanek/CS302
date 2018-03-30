@@ -1,0 +1,54 @@
+#ifndef FLIGHT_Map_V2_HEADER_
+#define FLIGHT_Map_V2_HEADER_
+
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <vector>
+#include "stack.h"
+
+using namespace std;
+
+class Map2 {
+        public:
+				Map2();
+				~Map2();
+
+				void getInput(char*, char*, char*);
+				void getAdjacencyVector();
+
+				int getCityNum(string);
+				int getFlight(string, string);
+				void getFlights(Stack&);
+				int getTotalPrice();
+
+				bool isPath(string, string);
+				void outputPath();
+				string getNextCity(int, string);
+				void markVisited(string);
+				void unvisitAll();
+                
+        private:
+
+				Stack cityStack;
+
+                int numOfFlights, numOfCities, numOfRequests;
+
+				string* cities;
+				vector<vector<string> > flights;
+				int* flightSize;
+
+				string* source;
+				string* destination;
+				int* flightNumber;
+				vector<int> flightsUsed;
+				int* price;
+
+				string* reqSource;
+				string* reqDestination;
+				bool* visited;
+				bool* noPath;
+};
+
+#endif
+

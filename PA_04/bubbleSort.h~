@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+class BubbleSort
+{
+
+	public:
+			BubbleSort();
+			~BubbleSort();
+
+			void sort(int* data, int size);
+			void swap(int* data, int &a, int &b);
+
+			int getComparisonNum();
+			int getSwapNum();
+
+	private:
+			bool sorted;
+			int numberOfComparisons;
+			int numberOfSwaps;
+
+};

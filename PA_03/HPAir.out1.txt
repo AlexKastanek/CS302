@@ -1,0 +1,94 @@
+--------------------------------------------------------------------------------
+
+Request is to fly from Los Angeles to Houston.
+
+HPAir flies from Los Angeles to Houston by taking the following path:
+Los Angeles -> Miami -> Atlanta -> Chicago -> Houston
+
+--------------------------------------------------------------------------------
+
+Request is to fly from Glendale to Houston.
+
+Sorry. HPAir does not fly from Glendale to Houston.
+
+--------------------------------------------------------------------------------
+
+Request is to fly from Dallas to Austin.
+
+Sorry. HPAir does not fly from Dallas to Austin.
+
+--------------------------------------------------------------------------------
+
+Request is to fly from Paris to New York.
+
+Sorry. HPAir does not serve both Paris and New York.
+
+--------------------------------------------------------------------------------
+
+Request is to fly from Cleveland to Chicago.
+
+HPAir flies from Cleveland to Chicago by taking the following path:
+Cleveland -> Houston -> Chicago
+
+--------------------------------------------------------------------------------
+
+Request is to fly from Indianapolis to San Francisco.
+
+HPAir flies from Indianapolis to San Francisco by taking the following path:
+Indianapolis -> Los Angeles -> San Francisco
+
+--------------------------------------------------------------------------------
+
+Request is to fly from San Francisco to Washington.
+
+HPAir flies from San Francisco to Washington by taking the following path:
+San Francisco -> Los Angeles -> Washington
+
+--------------------------------------------------------------------------------
+
+Request is to fly from Paris to Los Angeles.
+
+Sorry. HPAir does not serve Paris.
+
+--------------------------------------------------------------------------------
+
+Request is to fly from Boston to Columbia.
+
+HPAir flies from Boston to Columbia by taking the following path:
+Boston -> Chicago -> Houston -> Columbia
+
+--------------------------------------------------------------------------------
+
+Request is to fly from Miami to Denver.
+
+HPAir flies from Miami to Denver by taking the following path:
+Miami -> Atlanta -> Chicago -> Houston -> Denver
+
+--------------------------------------------------------------------------------
+
+Request is to fly from Miami to Boise.
+
+HPAir flies from Miami to Boise by taking the following path:
+Miami -> Atlanta -> Chicago -> Boise
+
+--------------------------------------------------------------------------------
+
+Request is to fly from Reno to Houston.
+
+Sorry. HPAir does not fly from Reno to Houston.
+
+--------------------------------------------------------------------------------
+
+Request is to fly from San Francisco to Chicago.
+
+HPAir flies from San Francisco to Chicago by taking the following path:
+San Francisco -> Los Angeles -> Miami -> Atlanta -> Chicago
+
+--------------------------------------------------------------------------------
+
+Request is to fly from Buffalo to Columbia.
+
+HPAir flies from Buffalo to Columbia by taking the following path:
+Buffalo -> Cincinnati -> Honolulu -> Houston -> Columbia
+
+--------------------------------------------------------------------------------

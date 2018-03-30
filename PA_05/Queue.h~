@@ -1,0 +1,142 @@
+#ifndef QUEUE
+#define QUEUE
+
+#include <iostream>
+
+using namespace std;
+
+template <class ItemType>
+class Queue
+{
+
+	public:
+		Queue(int = 100);
+		~Queue();
+
+		bool isEmpty() const;
+		bool isFull() const;
+		bool enqueue(ItemType);
+		bool dequeue(ItemType&);
+		ItemType peekFront() const;
+
+	private:
+		int max;
+		int front;
+		int rear;
+		ItemType *data;
+
+};
+
+template<class ItemType>
+Queue<ItemType>::Queue(int a)
+{
+
+	max = a;
+	front = 0;
+	rear = -1;
+	data = new ItemType[max];
+
+}
+
+template<class ItemType>
+Queue<ItemType>::~Queue()
+{
+
+	delete[] data;
+	data = NULL;
+
+}
+
+template<class ItemType>
+bool Queue<ItemType>::isEmpty() const
+{
+
+	if ((rear % max) == ((front % max) - 1))
+	{
+		return true;
+	} else {
+		return false;
+	}
+
+}
+
+template<class ItemType>
+bool Queue<ItemType>::isFull() const
+{
+
+	if ((rear - front + 1) == max)
+	{
+		return true;
+	} else {
+		return false;
+	}
+
+}
+
+template<class ItemType>
+bool Queue<ItemType>::enqueue(ItemType item)
+{
+
+	if (isFull()) 
+	{ 
+		data[front] = 0;
+		front++;
+	}
+
+	int index; //index to keep the array in bounds
+
+	rear++; //rear is incremented, even if the array is full
+
+	index = rear % max; //index is rear modulo max, which allows the queue to stay within the bounds of the array and wrap. If max is 7, for example, 0 mod 7 is 0 and so is 7 mod 7 as well as 14 mod 7. It keeps wrapping no matter how high rear or front get
+
+	data[index] = item; //item is stored in the data array at position index
+
+	return true;
+
+}
+
+template<class ItemType>
+bool Queue<ItemType>::dequeue(ItemType& item)
+{
+
+	if (isEmpty())
+	{
+		return false;
+	}
+	
+	int index; //index to keep array in bounds
+
+	index = front % max; //index gets front's array position
+
+	item = data[index]; //item gets what is currently stored in front
+
+	data[index] = 0; //the value in front is eliminated
+
+	front++; //front is incremented, which means dequeue no longer has to shift every data member down
+
+	return true;
+
+}
+
+template<class ItemType>
+ItemType Queue<ItemType>::peekFront() const
+{
+
+	return data[front];
+
+}
+
+#endif
+
+
+
+
+
+
+
+
+
+
+
+
+

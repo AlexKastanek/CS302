@@ -1,0 +1,50 @@
+#ifndef BINARY_NODE
+#define BINARY_NODE
+
+#include <iostream>
+#include <fstream>
+#include <cstddef>
+
+using namespace std;
+
+enum Color {RED, BLACK};
+
+class BinaryNode
+{
+
+	public:
+		BinaryNode();
+		BinaryNode(int);
+		BinaryNode(int, BinaryNode*, BinaryNode*);
+
+		void setItem(int);
+		int getItem() const;
+
+		bool isLeaf() const;
+		int getNumOfChildren() const;
+
+		BinaryNode* getParent() const;
+		BinaryNode* getLeftChildPtr() const;
+		BinaryNode* getRightChildPtr() const;
+		//Color getLeftColor() const;
+		//Color getRightColor() const;
+		Color getColor() const;
+
+		void setParent(BinaryNode*);
+		void setLeftChildPtr(BinaryNode*);
+		void setRightChildPtr(BinaryNode*);
+		//void setLeftColor(Color);
+		//void setRightColor(Color);
+		void setLeftColor(Color);
+
+	private:
+		int data;
+		BinaryNode* parent;
+		BinaryNode* leftChildPtr;
+		BinaryNode* rightChildPtr;
+	
+		Color color;
+
+};
+
+#endif

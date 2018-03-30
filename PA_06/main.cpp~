@@ -1,0 +1,253 @@
+#include <iostream>
+#include <fstream>
+#include <stdlib.h>
+#include <time.h>
+#include "BinaryNode.h"
+#include "BinarySearchTree.h"
+
+using namespace std;
+
+void visit(int&);
+
+int main()
+{
+
+	/*BinaryNode* test1 = new BinaryNode(2);
+	BinaryNode* test2 = new BinaryNode(3);
+	BinaryNode* test3 = new BinaryNode(1, test1, test2);
+
+	//cout << test3->getItem() << endl;
+
+	//cout << (test3->getLeftChildPtr())->getItem() << endl;
+	//cout << (test3->getRightChildPtr())->getItem() << endl;
+
+	//cout << test1->isLeaf() << " " << test3->isLeaf() << endl;
+
+	BinaryNode* test4 = new BinaryNode(4);
+
+	test1->setLeftChildPtr(test4);
+	//cout << (test1->getLeftChildPtr())->getItem() << endl;
+	//cout << test1->isLeaf() << endl;*/
+
+	/*BinarySearchTree test;
+
+	cout << test.getHeight() << endl;
+	//cout << test.isEmpty() << endl;
+
+	test.add(5);
+	test.add(6);
+	test.add(3);
+
+	//cout << test.getRootData() << endl;
+
+	cout << test.getHeight() << endl;
+
+	test.add(1);
+	test.add(4);
+	test.add(2);
+
+	cout << test.getHeight() << endl;
+
+	test.preorderTraverse(visit);
+	cout << endl;
+	test.inorderTraverse(visit);
+	cout << endl;
+	test.postorderTraverse(visit);
+	cout << endl;
+
+	//cout << test1->getNumOfChildren() << endl;
+	//cout << test2->getNumOfChildren() << endl;
+	//cout << test3->getNumOfChildren() << endl;
+
+	test.remove(2);
+
+	cout << test.getHeight() << endl;
+	//cout << test.getRootData() << endl;
+	//cout << "old left: " << ((test.getRootNode())->getLeftChildPtr())->getItem() << endl;
+
+	test.remove(3);
+	cout << test.getHeight() << endl;
+	//cout << "new left: " << ((test.getRootNode())->getLeftChildPtr())->getItem() << endl;
+
+	test.remove(4);
+	cout << test.getHeight() << endl;
+	//cout << "new left: " << ((test.getRootNode())->getLeftChildPtr())->getItem() << endl;
+
+	test.remove(1);
+	cout << test.getHeight() << endl;
+
+	test.remove(5);
+	cout << test.getHeight() << endl;
+
+	test.remove(6);
+	cout << test.getHeight() << endl;
+
+	cout << "final root: " << test.getRootData() << endl;*/
+
+
+	srand (time(NULL));
+	ofstream fout;
+	fout.open("Output");
+	bool* numExists1 = new bool[200];
+
+	BinarySearchTree BST1;
+
+	for (int i = 0; i < 200; i++)
+	{
+		numExists1[i] = false;
+	}
+
+	for (int i = 0; i < 100; i++)
+	{
+		int number = rand() % 200 + 1;
+		while (numExists1[number])
+		{
+			number = rand() % 200 + 1;
+		}
+		numExists1[number] = true;
+		BST1.add(number);	
+	}
+
+	fout << "================================================================================" << endl;
+	fout << "BEGIN OUTPUT..." << endl;
+	fout << "--------------------------------------------------------------------------------" << endl << "BST1 TREE UNALTERED" << endl << "--------------------------------------------------------------------------------" << endl;
+	fout << "HEIGHT OF BST1: " << BST1.getHeight() << endl;
+	fout << "INORDER TRAVERSAL OF BST1:" << endl;
+	fout.close();
+
+	BST1.inorderTraverse(visit);
+	fout.open("Output", ios_base::app);
+	fout << endl;
+
+	bool* numExists2 = new bool[200];
+
+	BinarySearchTree BST2;
+
+	for (int i = 0; i < 200; i++)
+	{
+		numExists2[i] = false;
+	}
+
+	for (int i = 0; i < 10; i++)
+	{
+		int number = rand() % 200 + 1;
+		while (numExists2[number] || !numExists1[number])
+		{
+			number = rand() % 200 + 1;
+		}
+		numExists2[number] = true;
+		BST2.add(number);	
+	}
+
+	fout << "--------------------------------------------------------------------------------" << endl << "BST2 TREE UNALTERED" << endl << "--------------------------------------------------------------------------------" << endl;
+	fout << "PREORDER TRAVERSAL OF BST2:" << endl;
+	fout.close();
+
+	BST2.preorderTraverse(visit);
+	fout.open("Output", ios_base::app);
+	fout << endl;
+	fout << "INORDER TRAVERSAL OF BST2:" << endl;
+	fout.close();
+
+	BST2.inorderTraverse(visit);
+	fout.open("Output", ios_base::app);
+	fout << endl;
+	fout << "POSTORDER TRAVERSAL OF BST2:" << endl;
+	fout.close();
+
+	BST2.postorderTraverse(visit);
+	fout.open("Output", ios_base::app);
+	fout << endl;
+
+	for (int i = 0; i < 200; i++)
+	{
+		if (numExists2[i])
+		{
+			//cout << i << endl;
+			BST1.remove(i);
+			numExists1[i] = false;
+		}
+	}
+
+	fout << "--------------------------------------------------------------------------------" << endl << "BST1 TREE WITH VALUES IN BST2 REMOVED" << endl << "--------------------------------------------------------------------------------" << endl;
+	fout << "HEIGHT OF NEW BST1: " << BST1.getHeight() << endl;
+	fout << "NUMBER OF NODES IN NEW BST1: " << BST1.getNumberOfNodes() << endl;
+	fout << "INORDER TRAVERSAL OF NEW BST1:" << endl;
+	fout.close();
+
+	BST1.inorderTraverse(visit);
+	fout.open("Output", ios_base::app);
+	fout << endl;
+
+	fout << "--------------------------------------------------------------------------------" << endl << "EFFECTIVELY CLEARING THE TREES" << endl << "--------------------------------------------------------------------------------" << endl;
+
+	fout << "BEFORE CLEARING BST1: " << endl;
+	if (BST1.isEmpty())
+	{
+		fout << "BST1 is empty" << endl;
+	}
+	else
+	{
+		fout << "BST1 is not empty" << endl;
+	}
+
+	fout << "BEFORE CLEARING BST2: " << endl;
+	if (BST2.isEmpty())
+	{
+		fout << "BST2 is empty" << endl;
+	}
+	else
+	{
+		fout << "BST2 is not empty" << endl;
+	}
+
+	BST1.clear();
+	fout << "AFTER CLEARING BST1: " << endl;
+	if (BST1.isEmpty())
+	{
+		fout << "BST1 is empty" << endl;
+	}
+	else
+	{
+		fout << "BST1 is not empty" << endl;
+	}
+
+	BST2.clear();
+	fout << "BEFORE CLEARING BST2: " << endl;
+	if (BST2.isEmpty())
+	{
+		fout << "BST2 is empty" << endl;
+	}
+	else
+	{
+		fout << "BST2 is not empty" << endl;
+	}
+
+	fout << "================================================================================" << endl;
+	fout.close();
+
+}
+
+void visit(int& data)
+{
+
+	ofstream fout;
+	fout.open("Output", ios_base::app);
+	fout << data << ", ";
+	fout.close();
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

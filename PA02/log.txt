@@ -1,0 +1,172 @@
+Partition around pivot (54 in position 4): 39 13 4 17 54 201 526 369 741 666 420 71 
+k = 12
+pivotIndex - first + 1 = 4 - 0 + 1 = 5
+Partition around pivot (201 in position 6): 71 201 369 741 666 420 526 
+k = 7
+pivotIndex - first + 1 = 6 - 5 + 1 = 2
+Partition around pivot (369 in position 7): 369 741 666 420 526 
+k = 5
+pivotIndex - first + 1 = 7 - 7 + 1 = 1
+Partition around pivot (741 in position 11): 666 420 526 741 
+k = 4
+pivotIndex - first + 1 = 11 - 8 + 1 = 4
+741 is the kth smallest value in this data.
+--------------------------------------------------------------------------------
+Partition around pivot (54 in position 4): 39 13 4 17 54 201 526 369 741 666 420 71 
+k = 4
+pivotIndex - first + 1 = 4 - 0 + 1 = 5
+Partition around pivot (39 in position 0): 39 13 4 
+39 is the largest value in this data.
+--------------------------------------------------------------------------------
+Partition around pivot (54 in position 4): 39 13 4 17 54 201 526 369 741 666 420 71 
+k = 8
+pivotIndex - first + 1 = 4 - 0 + 1 = 5
+Partition around pivot (201 in position 6): 71 201 369 741 666 420 526 
+k = 3
+pivotIndex - first + 1 = 6 - 5 + 1 = 2
+Partition around pivot (369 in position 7): 369 741 666 420 526 
+k = 1
+pivotIndex - first + 1 = 7 - 7 + 1 = 1
+369 is the kth smallest value in this data.
+--------------------------------------------------------------------------------
+Partition around pivot (54 in position 0): 54 39 744 526 17 201 4 369 741 666 420 71 
+744 is the largest value in this data.
+--------------------------------------------------------------------------------
+Partition around pivot (54 in position 4): 39 13 4 17 54 201 526 369 741 666 420 71 
+k = 10
+pivotIndex - first + 1 = 4 - 0 + 1 = 5
+Partition around pivot (201 in position 6): 71 201 369 741 666 420 526 
+k = 5
+pivotIndex - first + 1 = 6 - 5 + 1 = 2
+Partition around pivot (369 in position 7): 369 741 666 420 526 
+k = 3
+pivotIndex - first + 1 = 7 - 7 + 1 = 1
+Partition around pivot (741 in position 11): 666 420 526 741 
+k = 2
+pivotIndex - first + 1 = 11 - 8 + 1 = 4
+Partition around pivot (666 in position 10): 420 526 
+k = 2
+pivotIndex - first + 1 = 10 - 8 + 1 = 3
+Partition around pivot (420 in position 8): 420 
+k = 2
+pivotIndex - first + 1 = 8 - 8 + 1 = 1
+Partition around pivot (526 in position 9): 
+k = 1
+pivotIndex - first + 1 = 9 - 9 + 1 = 1
+526 is the kth smallest value in this data.
+--------------------------------------------------------------------------------
+Partition around pivot (54 in position 4): 39 13 4 17 54 201 526 369 741 666 420 71 
+k = 4
+pivotIndex - first + 1 = 4 - 0 + 1 = 5
+Partition around pivot (39 in position 0): 39 13 4 
+39 is the largest value in this data.
+--------------------------------------------------------------------------------
+Partition around pivot (54 in position 4): 39 13 4 17 54 201 526 369 741 666 420 71 
+k = 8
+pivotIndex - first + 1 = 4 - 0 + 1 = 5
+Partition around pivot (201 in position 6): 71 201 369 741 666 420 526 
+k = 3
+pivotIndex - first + 1 = 6 - 5 + 1 = 2
+Partition around pivot (369 in position 7): 369 741 666 420 526 
+k = 1
+pivotIndex - first + 1 = 7 - 7 + 1 = 1
+369 is the kth smallest value in this data.
+--------------------------------------------------------------------------------
+Partition around pivot (33 in position 32): 27 12 29 6 26 24 19 14 8 17 25 13 1 9 32 20 2 28 4 15 30 11 23 5 7 10 22 21 18 31 3 16 33 55 80 97 96 71 41 64 91 46 61 88 78 76 89 73 98 82 53 79 86 39 54 72 94 52 70 56 57 99 63 40 67 75 69 90 92 43 68 47 60 36 38 44 93 37 42 83 48 51 59 62 45 58 74 77 66 35 95 84 81 50 87 49 65 34 
+k = 49
+pivotIndex - first + 1 = 32 - 0 + 1 = 33
+Partition around pivot (55 in position 54): 34 49 50 35 41 45 51 46 48 42 37 44 38 36 47 43 53 40 52 39 54 55 72 94 86 70 56 57 99 63 79 67 75 69 90 92 82 68 98 60 73 89 76 93 78 88 83 61 91 59 62 64 58 74 77 66 71 95 84 81 96 87 97 65 80 
+k = 16
+pivotIndex - first + 1 = 54 - 33 + 1 = 22
+Partition around pivot (34 in position 33): 34 49 50 35 41 45 51 46 48 42 37 44 38 36 47 43 53 40 52 39 
+k = 16
+pivotIndex - first + 1 = 33 - 33 + 1 = 1
+Partition around pivot (49 in position 48): 39 35 41 45 40 46 48 42 37 44 38 36 47 43 49 53 51 52 50 
+k = 15
+pivotIndex - first + 1 = 48 - 34 + 1 = 15
+49 is the kth smallest value in this data.
+--------------------------------------------------------------------------------
+Partition around pivot (33 in position 32): 27 12 29 6 26 24 19 14 8 17 25 13 1 9 32 20 2 28 4 15 30 11 23 5 7 10 22 21 18 31 3 16 33 55 80 97 96 71 41 64 91 46 61 88 78 76 89 73 98 82 53 79 86 39 54 72 94 52 70 56 57 99 63 40 67 75 69 90 92 43 68 47 60 36 38 44 93 37 42 83 48 51 59 62 45 58 74 77 66 35 95 84 81 50 87 49 65 34 
+k = 50
+pivotIndex - first + 1 = 32 - 0 + 1 = 33
+Partition around pivot (55 in position 54): 34 49 50 35 41 45 51 46 48 42 37 44 38 36 47 43 53 40 52 39 54 55 72 94 86 70 56 57 99 63 79 67 75 69 90 92 82 68 98 60 73 89 76 93 78 88 83 61 91 59 62 64 58 74 77 66 71 95 84 81 96 87 97 65 80 
+k = 17
+pivotIndex - first + 1 = 54 - 33 + 1 = 22
+Partition around pivot (34 in position 33): 34 49 50 35 41 45 51 46 48 42 37 44 38 36 47 43 53 40 52 39 
+k = 17
+pivotIndex - first + 1 = 33 - 33 + 1 = 1
+Partition around pivot (49 in position 48): 39 35 41 45 40 46 48 42 37 44 38 36 47 43 49 53 51 52 50 
+k = 16
+pivotIndex - first + 1 = 48 - 34 + 1 = 15
+Partition around pivot (53 in position 52): 51 52 50 53 
+k = 1
+pivotIndex - first + 1 = 52 - 49 + 1 = 4
+Partition around pivot (51 in position 50): 50 51 
+k = 1
+pivotIndex - first + 1 = 50 - 49 + 1 = 2
+Partition around pivot (50 in position 49): 
+k = 1
+pivotIndex - first + 1 = 49 - 49 + 1 = 1
+50 is the kth smallest value in this data.
+--------------------------------------------------------------------------------
+Partition around pivot (33 in position 32): 27 12 29 6 26 24 19 14 8 17 25 13 1 9 32 20 2 28 4 15 30 11 23 5 7 10 22 21 18 31 3 16 33 55 80 97 96 71 41 64 91 46 61 88 78 76 89 73 98 82 53 79 86 39 54 72 94 52 70 56 57 99 63 40 67 75 69 90 92 43 68 47 60 36 38 44 93 37 42 83 48 51 59 62 45 58 74 77 66 35 95 84 81 50 87 49 65 34 
+k = 50
+pivotIndex - first + 1 = 32 - 0 + 1 = 33
+Partition around pivot (55 in position 54): 34 49 50 35 41 45 51 46 48 42 37 44 38 36 47 43 53 40 52 39 54 55 72 94 86 70 56 57 99 63 79 67 75 69 90 92 82 68 98 60 73 89 76 93 78 88 83 61 91 59 62 64 58 74 77 66 71 95 84 81 96 87 97 65 80 
+k = 17
+pivotIndex - first + 1 = 54 - 33 + 1 = 22
+Partition around pivot (34 in position 33): 34 49 50 35 41 45 51 46 48 42 37 44 38 36 47 43 53 40 52 39 
+k = 17
+pivotIndex - first + 1 = 33 - 33 + 1 = 1
+Partition around pivot (49 in position 48): 39 35 41 45 40 46 48 42 37 44 38 36 47 43 49 53 51 52 50 
+k = 16
+pivotIndex - first + 1 = 48 - 34 + 1 = 15
+Partition around pivot (53 in position 52): 51 52 50 53 
+k = 1
+pivotIndex - first + 1 = 52 - 49 + 1 = 4
+Partition around pivot (51 in position 50): 50 51 
+k = 1
+pivotIndex - first + 1 = 50 - 49 + 1 = 2
+Partition around pivot (50 in position 49): 
+k = 1
+pivotIndex - first + 1 = 49 - 49 + 1 = 1
+50 is the kth smallest value in this data.
+--------------------------------------------------------------------------------
+Partition around pivot (33 in position 32): 27 12 29 6 26 24 19 14 8 17 25 13 1 9 32 20 2 28 4 15 30 11 23 5 7 10 22 21 18 31 3 16 33 55 80 97 96 71 41 64 91 46 61 88 78 76 89 73 98 82 53 79 86 39 54 72 94 52 70 56 57 99 63 40 67 75 69 90 92 43 68 47 60 36 38 44 93 37 42 83 48 51 59 62 45 58 74 77 66 35 95 84 81 50 87 49 65 34 
+k = 5
+pivotIndex - first + 1 = 32 - 0 + 1 = 33
+Partition around pivot (27 in position 26): 12 16 6 26 24 19 14 8 17 25 13 1 9 3 20 2 18 4 15 21 11 23 5 7 10 22 27 30 28 31 32 
+k = 5
+pivotIndex - first + 1 = 26 - 0 + 1 = 27
+Partition around pivot (12 in position 11): 10 6 7 5 11 4 8 2 3 9 1 12 13 25 20 17 18 14 15 21 19 23 24 26 16 
+k = 5
+pivotIndex - first + 1 = 11 - 0 + 1 = 12
+Partition around pivot (10 in position 9): 6 7 5 1 4 8 2 3 9 10 
+k = 5
+pivotIndex - first + 1 = 9 - 0 + 1 = 10
+Partition around pivot (6 in position 5): 3 5 1 4 2 6 8 7 
+k = 5
+pivotIndex - first + 1 = 5 - 0 + 1 = 6
+Partition around pivot (3 in position 0): 3 5 1 4 
+5 is the largest value in this data.
+--------------------------------------------------------------------------------
+Partition around pivot (54 in position 4): 39 13 4 17 54 201 526 369 741 666 420 71 
+k = 9
+pivotIndex - first + 1 = 4 - 0 + 1 = 5
+Partition around pivot (201 in position 6): 71 201 369 741 666 420 526 
+k = 4
+pivotIndex - first + 1 = 6 - 5 + 1 = 2
+Partition around pivot (369 in position 7): 369 741 666 420 526 
+k = 2
+pivotIndex - first + 1 = 7 - 7 + 1 = 1
+Partition around pivot (741 in position 11): 666 420 526 741 
+k = 1
+pivotIndex - first + 1 = 11 - 8 + 1 = 4
+Partition around pivot (666 in position 10): 420 526 
+k = 1
+pivotIndex - first + 1 = 10 - 8 + 1 = 3
+Partition around pivot (420 in position 8): 420 
+k = 1
+pivotIndex - first + 1 = 8 - 8 + 1 = 1
+420 is the kth smallest value in this data.
+--------------------------------------------------------------------------------

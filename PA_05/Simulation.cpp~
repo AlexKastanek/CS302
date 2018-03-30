@@ -1,0 +1,208 @@
+#include "Simulation.h"
+
+Simulation::Simulation(int a)
+{
+
+	numOfCustomers = a;
+	numOfEvents = a * 2;
+	averageWaitTime = 0;
+	maxWaitTime = 0;
+	totalWaitTime = 0;
+	averageLengthOfLine = 0;
+	maxLengthOfLine = 0;
+	totalLengthOfLine = 0;
+	totalIdleTime = 0;
+	idleStart = 0;
+	idleEnd = 0;
+	arrivals = new Event[numOfCustomers];
+
+}
+
+Simulation::~Simulation()
+{
+
+	delete[] arrivals;
+	arrivals = NULL;
+
+}
+
+void Simulation::getArrivals(char* fileName)
+{
+
+	ifstream fin;
+
+	fin.open(fileName);
+	for (int i = 0; i < numOfCustomers; i++)
+	{
+		int temp;
+		fin >> temp;
+		arrivals[i].setStartTime(temp);
+		arrivals[i].randomizeLength(100);
+	}
+
+	fin.close();
+
+}
+
+void Simulation::simulate()
+{
+
+	Queue<int> departureQueue;
+	Queue<Event> arrivalQueue, eventQueue(numOfEvents), bankLine;
+
+	tellerAvailable = true;
+
+	for (int i = 0; i < numOfCustomers; i++)
+	{
+		//cout << arrivals[i];
+		arrivalQueue.enqueue(arrivals[i]);
+	}
+
+	arrivalQueue.printToFile((char*)"arrivalQueue");
+
+	while (!arrivalQueue.isEmpty())
+	{
+		int arrivalTime, departureTime;
+		arrivalTime = (arrivalQueue.peekFront()).getStartTime();
+		departureTime = departureQueue.peekFront();
+		transactionTime = (arrivalQueue.peekFront()).getLength();
+		//departureQueue.print();
+		//customerQueue.print();
+		if (departureQueue.isEmpty() || arrivalTime < departureTime)
+		{
+			currentTime = arrivalTime;
+			processArrival(arrivalQueue, eventQueue, bankLine, departureQueue);
+		} else
+		{
+			currentTime = departureTime;
+			processDeparture(arrivalQueue, eventQueue, bankLine, departureQueue);
+		}
+		int currentLine = bankLine.getLength();
+		if (currentLine > maxLengthOfLine)
+		{
+			maxLengthOfLine = currentLine;
+		}
+		totalLengthOfLine = totalLengthOfLine + currentLine;
+	}
+
+	while (!bankLine.isEmpty())
+	{
+		processDeparture(arrivalQueue, eventQueue, bankLine, departureQueue);
+		int currentLine = bankLine.getLength();
+		totalLengthOfLine = totalLengthOfLine + currentLine;
+	}
+
+	int totalSimulatedTime;
+
+	while (!departureQueue.isEmpty())
+	{
+		int departureTime;
+		departureQueue.dequeue(departureTime);
+		totalSimulatedTime = departureTime;
+	
+		Event customerDeparture('D', departureTime, 0);
+		eventQueue.enqueue(customerDeparture);
+	}
+	
+		eventQueue.printToFile((char*)"Events");
+
+		averageWaitTime = (float) totalWaitTime / numOfCustomers;
+		averageLengthOfLine = (float) totalLengthOfLine / numOfEvents;
+
+		cout << "Total simulated time: " << totalSimulatedTime << endl;
+		cout << "Average wait time: " << averageWaitTime << endl;
+		cout << "Maximum wait time: " << maxWaitTime << endl;
+		cout << "Average length of line: " << averageLengthOfLine << endl;
+		cout << "Maximum length of line: " << maxLengthOfLine << endl;
+		//cout << (long int) totalLengthOfLine << endl;
+		cout << "Total teller idle time: " << totalIdleTime << endl;
+
+}
+
+void Simulation::processArrival(Queue<Event>& arrivalQueue, Queue<Event>& eventQueue, Queue<Event>& bankLine, Queue<int>& departureQueue)
+{
+
+	Event customerArrival;
+	arrivalQueue.dequeue(customerArrival);
+	
+	eventQueue.enqueue(customerArrival);
+	/*int index;
+	while (customerArrival.startTime() != arrivals[i].startTime())
+	{
+		index++;
+	}*/
+	Customer newCustomer;
+	//cout << currentTime << endl;
+	newCustomer.setArrivalTime(currentTime);
+	customerQueue.enqueue(newCustomer);
+
+	if (bankLine.isEmpty() && tellerAvailable)
+	{
+		Customer currentCustomer;
+		customerQueue.dequeue(currentCustomer);
+		//cout << currentTime << "-" << currentCustomer.getArrivalTime() << endl;
+		currentCustomer.setWaitTime(currentTime);
+		//cout << currentCustomer.getWaitTime() << endl;
+		departureQueue.enqueue(currentTime + transactionTime);
+		tellerAvailable = false;
+		idleEnd = currentTime;
+		totalIdleTime = totalIdleTime + (idleEnd - idleStart);
+	} else
+	{
+		bankLine.enqueue(customerArrival);
+	}
+
+}
+
+void Simulation::processDeparture(Queue<Event>& arrivalQueue, Queue<Event>& eventQueue, Queue<Event>& bankLine, Queue<int>& departureQueue)
+{
+
+	int departureTime;
+	departureQueue.dequeue(departureTime);
+
+	Event customerDeparture('D', departureTime, 0);
+	eventQueue.enqueue(customerDeparture);
+
+	if (!bankLine.isEmpty())
+	{
+		Customer currentCustomer;
+		customerQueue.dequeue(currentCustomer);
+		currentCustomer.setWaitTime(currentTime);
+		int newWaitTime = currentCustomer.getWaitTime();
+		if (newWaitTime > maxWaitTime)
+		{
+			maxWaitTime = newWaitTime;
+		}
+		totalWaitTime = totalWaitTime + newWaitTime;
+
+		Event nextCustomer;
+		bankLine.dequeue(nextCustomer);
+		departureQueue.enqueue(currentTime + nextCustomer.getLength());
+	}
+	else
+	{
+		tellerAvailable = true;
+		idleStart = currentTime;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

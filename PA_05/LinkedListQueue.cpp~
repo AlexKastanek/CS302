@@ -1,0 +1,293 @@
+#ifndef LINKED_LIST_QUEUE
+#define LINKED_LIST_QUEUE
+
+#include <iostream>
+#include <fstream>
+#include <string>
+#include "Event.h"
+#include "Customer.h"
+
+using namespace std;
+
+template <class ItemType>
+struct Node
+{
+
+	ItemType data;
+	Node<ItemType>* next;
+
+};
+
+template <class ItemType>
+class LinkedListQueue
+{
+
+	public:
+		LinkedListQueue();
+		~LinkedListQueue();
+		
+		bool isEmpty() const;
+		bool isFull() const;
+		bool clear();
+		int getLength() const;
+		bool enqueue(ItemType);
+		bool dequeue(ItemType&);
+		bool peekFront(ItemType&) const;
+		void print() const;
+		void printToFile(char*, bool) const;
+
+	private:
+		Node<ItemType>* front;
+		Node<ItemType>* rear;
+
+};
+
+template <class ItemType>
+LinkedListQueue<ItemType>::LinkedListQueue()
+{
+
+	front = NULL;
+	rear = NULL;
+
+}
+
+template <class ItemType>
+LinkedListQueue<ItemType>::~LinkedListQueue()
+{
+
+	clear();
+
+}
+
+template <class ItemType>
+bool LinkedListQueue<ItemType>::isEmpty() const
+{
+
+	if (front == NULL)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+
+}
+
+template <class ItemType>
+bool LinkedListQueue<ItemType>::isFull() const
+{
+
+	return false;
+
+}
+
+template <class ItemType>
+bool LinkedListQueue<ItemType>::clear()
+{
+
+	Node<ItemType>* temp;
+
+	while (front != NULL)
+	{
+		temp = front;
+		front = front->next;
+		delete temp;
+	}
+
+	front = NULL;
+	rear = NULL;
+
+}
+
+template <class ItemType>
+int LinkedListQueue<ItemType>::getLength() const
+{
+
+	if (isEmpty())
+	{
+		return 0;
+	}
+
+	Node<ItemType>* cursor = front;
+	int count = 0;
+
+	while (cursor != NULL)
+	{
+
+		cursor = cursor->next;
+		count++;
+
+	}
+
+	delete cursor;
+	return count;
+
+}
+
+template <class ItemType>
+bool LinkedListQueue<ItemType>::enqueue(ItemType item)
+{
+
+	if (isFull())
+	{
+		return false;
+	}
+
+	Node<ItemType>* temp = new Node<ItemType>();
+	temp->data = item;
+	temp->next = NULL;
+
+	if (front == NULL)
+	{
+		front = temp;
+		rear = temp;
+	}
+	else
+	{
+		rear->next = temp;
+		rear = temp;
+	}
+
+	return true;
+
+}
+
+template <class ItemType>
+bool LinkedListQueue<ItemType>::dequeue(ItemType& item)
+{
+
+	if (isEmpty())
+	{
+		return false;
+	}
+
+	item = front->data;
+
+	Node<ItemType>* temp = front;
+	front = front->next;
+	delete temp;
+
+	if (isEmpty())
+	{
+		front = NULL;
+		rear = NULL;
+	}
+
+	return true;
+
+}
+
+template <class ItemType>
+bool LinkedListQueue<ItemType>::peekFront(ItemType& item) const
+{
+
+	if (isEmpty())
+	{
+		return false;
+	}
+
+	item = front->data;
+
+	return true;
+
+}
+
+template <class ItemType>
+void LinkedListQueue<ItemType>::print() const
+{
+
+	if (isEmpty())
+	{
+		return;
+	}
+
+	Node<ItemType>* cursor = front;
+
+	while (cursor != NULL)
+	{
+
+		cout << cursor->data << endl;
+		cursor = cursor->next;
+
+	}
+
+	delete cursor;
+
+}
+
+template <class ItemType>
+void LinkedListQueue<ItemType>::printToFile(char* fileName, bool append) const
+{
+
+	if (isEmpty())
+	{
+		return;
+	}
+
+	ofstream fout;
+	Node<ItemType>* cursor = front;
+
+	if (!append)
+	{
+		fout.open(fileName);
+	
+		while (cursor != NULL)
+		{	
+			fout << cursor->data;
+			cursor = cursor->next;	
+		}
+
+		fout.close();
+	} 
+	else
+	{
+		fout.open(fileName, ios_base::app);
+	
+		while (cursor != NULL)
+		{	
+			fout << cursor->data;
+			cursor = cursor->next;	
+		}
+
+		fout.close();
+	}
+
+	delete cursor;
+
+}
+
+#endif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

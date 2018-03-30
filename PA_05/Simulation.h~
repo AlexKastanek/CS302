@@ -1,0 +1,39 @@
+#ifndef Simulation1
+#define Simulation1
+
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <stdlib.h>
+#include <time.h>
+#include "Event.h"
+#include "Queue.cpp"
+#include "Customer.h"
+
+class Simulation1
+{
+
+	public:
+		Simulation1(int = 99999);
+		~Simulation1();
+
+		void getArrivals(char*);
+
+		void simulate();
+		void processArrival(Queue<Event>&, Queue<Event>&, Queue<Event>&, Queue<int>&);
+		void processDeparture(Queue<Event>&, Queue<Event>&, Queue<Event>&,      Queue<int>&);
+
+	private:
+		Queue<Customer> customerQueue;
+		Event customer;
+		Event* arrivals;
+		int numOfCustomers, numOfEvents, currentTime, transactionTime;
+		int maxWaitTime, totalWaitTime;
+		int maxLengthOfLine;
+		float averageWaitTime, averageLengthOfLine, totalLengthOfLine;
+		bool tellerAvailable;
+		int totalIdleTime, idleStart, idleEnd;
+
+};
+
+#endif

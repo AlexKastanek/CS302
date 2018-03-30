@@ -1,0 +1,3119 @@
+
+Please run program to append onto this file.
+
+--------------------------------------------------------------------------------
+
+Clearing cityStack if not empty, clearing marks on all cities
+Calling getCityNum for originCity and destinationCity
+destinationNumber = 16, originNumber = 19
+Pushing originCity on to empty stack and marking as visited
+topCity = Los Angeles
+topCityNum gets originNumber
+
+begin while loop... will loop until stack is empty or destination is found
+Stack at beginning of loop: 
+Los Angeles
+nextCity = Indianapolis
+nextCityNum = 17
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Indianapolis, 17
+Stack at beginning of loop: 
+Los Angeles -> Indianapolis
+nextCity = Los Angeles
+nextCityNum = 19
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Los Angeles, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Los Angeles, 19
+Stack at beginning of loop: 
+Los Angeles
+nextCity = Indianapolis
+nextCityNum = 17
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Indianapolis, new nextCity = Miami
+new nextCityNum = 20
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Miami, 20
+Stack at beginning of loop: 
+Los Angeles -> Miami
+nextCity = Los Angeles
+nextCityNum = 19
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Los Angeles, new nextCity = Atlanta
+new nextCityNum = 0
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Atlanta, 0
+Stack at beginning of loop: 
+Los Angeles -> Miami -> Atlanta
+nextCity = Chicago
+nextCityNum = 5
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Chicago, 5
+Stack at beginning of loop: 
+Los Angeles -> Miami -> Atlanta -> Chicago
+nextCity = Atlanta
+nextCityNum = 0
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Atlanta, new nextCity = Boise
+new nextCityNum = 2
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Boise, 2
+Stack at beginning of loop: 
+Los Angeles -> Miami -> Atlanta -> Chicago -> Boise
+nextCity = Chicago
+nextCityNum = 5
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Chicago, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Chicago, 5
+Stack at beginning of loop: 
+Los Angeles -> Miami -> Atlanta -> Chicago
+nextCity = Atlanta
+nextCityNum = 0
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Atlanta, new nextCity = Boise
+new nextCityNum = 2
+visited = 1
+visitedCity = Boise, new nextCity = Boston
+new nextCityNum = 3
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Boston, 3
+Stack at beginning of loop: 
+Los Angeles -> Miami -> Atlanta -> Chicago -> Boston
+nextCity = Chicago
+nextCityNum = 5
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Chicago, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Chicago, 5
+Stack at beginning of loop: 
+Los Angeles -> Miami -> Atlanta -> Chicago
+nextCity = Atlanta
+nextCityNum = 0
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Atlanta, new nextCity = Boise
+new nextCityNum = 2
+visited = 1
+visitedCity = Boise, new nextCity = Boston
+new nextCityNum = 3
+visited = 1
+visitedCity = Boston, new nextCity = Houston
+new nextCityNum = 16
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Houston, 16
+end while loop
+Destination city was found, final path: 
+Los Angeles -> Miami -> Atlanta -> Chicago -> Houston
+--------------------------------------------------------------------------------
+
+Clearing cityStack if not empty, clearing marks on all cities
+Calling getCityNum for originCity and destinationCity
+destinationNumber = 16, originNumber = 14
+Pushing originCity on to empty stack and marking as visited
+topCity = Glendale
+topCityNum gets originNumber
+
+begin while loop... will loop until stack is empty or destination is found
+Stack at beginning of loop: 
+Glendale
+nextCity =  
+nextCityNum = -1
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+end while loop
+Stack is empty, no possible flights, returning false
+--------------------------------------------------------------------------------
+
+Clearing cityStack if not empty, clearing marks on all cities
+Calling getCityNum for originCity and destinationCity
+destinationNumber = 1, originNumber = 9
+Pushing originCity on to empty stack and marking as visited
+topCity = Dallas
+topCityNum gets originNumber
+
+begin while loop... will loop until stack is empty or destination is found
+Stack at beginning of loop: 
+Dallas
+nextCity = Houston
+nextCityNum = 16
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Houston, 16
+Stack at beginning of loop: 
+Dallas -> Houston
+nextCity = Glendale
+nextCityNum = 14
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Glendale, 14
+Stack at beginning of loop: 
+Dallas -> Houston -> Glendale
+nextCity =  
+nextCityNum = -1
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Houston, 16
+Stack at beginning of loop: 
+Dallas -> Houston
+nextCity = Glendale
+nextCityNum = 14
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Glendale, new nextCity = Cleveland
+new nextCityNum = 7
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Cleveland, 7
+Stack at beginning of loop: 
+Dallas -> Houston -> Cleveland
+nextCity = Houston
+nextCityNum = 16
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Houston, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Houston, 16
+Stack at beginning of loop: 
+Dallas -> Houston
+nextCity = Glendale
+nextCityNum = 14
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Glendale, new nextCity = Cleveland
+new nextCityNum = 7
+visited = 1
+visitedCity = Cleveland, new nextCity = Columbia
+new nextCityNum = 8
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Columbia, 8
+Stack at beginning of loop: 
+Dallas -> Houston -> Columbia
+nextCity = Houston
+nextCityNum = 16
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Houston, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Houston, 16
+Stack at beginning of loop: 
+Dallas -> Houston
+nextCity = Glendale
+nextCityNum = 14
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Glendale, new nextCity = Cleveland
+new nextCityNum = 7
+visited = 1
+visitedCity = Cleveland, new nextCity = Columbia
+new nextCityNum = 8
+visited = 1
+visitedCity = Columbia, new nextCity = Dallas
+new nextCityNum = 9
+visited = 1
+visitedCity = Dallas, new nextCity = Denton
+new nextCityNum = 10
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Denton, 10
+Stack at beginning of loop: 
+Dallas -> Houston -> Denton
+nextCity = Houston
+nextCityNum = 16
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Houston, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Houston, 16
+Stack at beginning of loop: 
+Dallas -> Houston
+nextCity = Glendale
+nextCityNum = 14
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Glendale, new nextCity = Cleveland
+new nextCityNum = 7
+visited = 1
+visitedCity = Cleveland, new nextCity = Columbia
+new nextCityNum = 8
+visited = 1
+visitedCity = Columbia, new nextCity = Dallas
+new nextCityNum = 9
+visited = 1
+visitedCity = Dallas, new nextCity = Denton
+new nextCityNum = 10
+visited = 1
+visitedCity = Denton, new nextCity = Denver
+new nextCityNum = 11
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Denver, 11
+Stack at beginning of loop: 
+Dallas -> Houston -> Denver
+nextCity = Houston
+nextCityNum = 16
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Houston, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Houston, 16
+Stack at beginning of loop: 
+Dallas -> Houston
+nextCity = Glendale
+nextCityNum = 14
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Glendale, new nextCity = Cleveland
+new nextCityNum = 7
+visited = 1
+visitedCity = Cleveland, new nextCity = Columbia
+new nextCityNum = 8
+visited = 1
+visitedCity = Columbia, new nextCity = Dallas
+new nextCityNum = 9
+visited = 1
+visitedCity = Dallas, new nextCity = Denton
+new nextCityNum = 10
+visited = 1
+visitedCity = Denton, new nextCity = Denver
+new nextCityNum = 11
+visited = 1
+visitedCity = Denver, new nextCity = Chicago
+new nextCityNum = 5
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Chicago, 5
+Stack at beginning of loop: 
+Dallas -> Houston -> Chicago
+nextCity = Atlanta
+nextCityNum = 0
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Atlanta, 0
+Stack at beginning of loop: 
+Dallas -> Houston -> Chicago -> Atlanta
+nextCity = Chicago
+nextCityNum = 5
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Chicago, new nextCity = Miami
+new nextCityNum = 20
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Miami, 20
+Stack at beginning of loop: 
+Dallas -> Houston -> Chicago -> Atlanta -> Miami
+nextCity = Los Angeles
+nextCityNum = 19
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Los Angeles, 19
+Stack at beginning of loop: 
+Dallas -> Houston -> Chicago -> Atlanta -> Miami -> Los Angeles
+nextCity = Indianapolis
+nextCityNum = 17
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Indianapolis, 17
+Stack at beginning of loop: 
+Dallas -> Houston -> Chicago -> Atlanta -> Miami -> Los Angeles -> Indianapolis
+nextCity = Los Angeles
+nextCityNum = 19
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Los Angeles, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Los Angeles, 19
+Stack at beginning of loop: 
+Dallas -> Houston -> Chicago -> Atlanta -> Miami -> Los Angeles
+nextCity = Indianapolis
+nextCityNum = 17
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Indianapolis, new nextCity = Miami
+new nextCityNum = 20
+visited = 1
+visitedCity = Miami, new nextCity = San Francisco
+new nextCityNum = 25
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: San Francisco, 25
+Stack at beginning of loop: 
+Dallas -> Houston -> Chicago -> Atlanta -> Miami -> Los Angeles -> San Francisco
+nextCity = Los Angeles
+nextCityNum = 19
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Los Angeles, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Los Angeles, 19
+Stack at beginning of loop: 
+Dallas -> Houston -> Chicago -> Atlanta -> Miami -> Los Angeles
+nextCity = Indianapolis
+nextCityNum = 17
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Indianapolis, new nextCity = Miami
+new nextCityNum = 20
+visited = 1
+visitedCity = Miami, new nextCity = San Francisco
+new nextCityNum = 25
+visited = 1
+visitedCity = San Francisco, new nextCity = Tampa
+new nextCityNum = 26
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Tampa, 26
+Stack at beginning of loop: 
+Dallas -> Houston -> Chicago -> Atlanta -> Miami -> Los Angeles -> Tampa
+nextCity = Los Angeles
+nextCityNum = 19
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Los Angeles, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Los Angeles, 19
+Stack at beginning of loop: 
+Dallas -> Houston -> Chicago -> Atlanta -> Miami -> Los Angeles
+nextCity = Indianapolis
+nextCityNum = 17
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Indianapolis, new nextCity = Miami
+new nextCityNum = 20
+visited = 1
+visitedCity = Miami, new nextCity = San Francisco
+new nextCityNum = 25
+visited = 1
+visitedCity = San Francisco, new nextCity = Tampa
+new nextCityNum = 26
+visited = 1
+visitedCity = Tampa, new nextCity = Washington
+new nextCityNum = 27
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Washington, 27
+Stack at beginning of loop: 
+Dallas -> Houston -> Chicago -> Atlanta -> Miami -> Los Angeles -> Washington
+nextCity = Los Angeles
+nextCityNum = 19
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Los Angeles, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Los Angeles, 19
+Stack at beginning of loop: 
+Dallas -> Houston -> Chicago -> Atlanta -> Miami -> Los Angeles
+nextCity = Indianapolis
+nextCityNum = 17
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Indianapolis, new nextCity = Miami
+new nextCityNum = 20
+visited = 1
+visitedCity = Miami, new nextCity = San Francisco
+new nextCityNum = 25
+visited = 1
+visitedCity = San Francisco, new nextCity = Tampa
+new nextCityNum = 26
+visited = 1
+visitedCity = Tampa, new nextCity = Washington
+new nextCityNum = 27
+visited = 1
+visitedCity = Washington, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Miami, 20
+Stack at beginning of loop: 
+Dallas -> Houston -> Chicago -> Atlanta -> Miami
+nextCity = Los Angeles
+nextCityNum = 19
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Los Angeles, new nextCity = Atlanta
+new nextCityNum = 0
+visited = 1
+visitedCity = Atlanta, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Atlanta, 0
+Stack at beginning of loop: 
+Dallas -> Houston -> Chicago -> Atlanta
+nextCity = Chicago
+nextCityNum = 5
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Chicago, new nextCity = Miami
+new nextCityNum = 20
+visited = 1
+visitedCity = Miami, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Chicago, 5
+Stack at beginning of loop: 
+Dallas -> Houston -> Chicago
+nextCity = Atlanta
+nextCityNum = 0
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Atlanta, new nextCity = Boise
+new nextCityNum = 2
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Boise, 2
+Stack at beginning of loop: 
+Dallas -> Houston -> Chicago -> Boise
+nextCity = Chicago
+nextCityNum = 5
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Chicago, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Chicago, 5
+Stack at beginning of loop: 
+Dallas -> Houston -> Chicago
+nextCity = Atlanta
+nextCityNum = 0
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Atlanta, new nextCity = Boise
+new nextCityNum = 2
+visited = 1
+visitedCity = Boise, new nextCity = Boston
+new nextCityNum = 3
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Boston, 3
+Stack at beginning of loop: 
+Dallas -> Houston -> Chicago -> Boston
+nextCity = Chicago
+nextCityNum = 5
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Chicago, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Chicago, 5
+Stack at beginning of loop: 
+Dallas -> Houston -> Chicago
+nextCity = Atlanta
+nextCityNum = 0
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Atlanta, new nextCity = Boise
+new nextCityNum = 2
+visited = 1
+visitedCity = Boise, new nextCity = Boston
+new nextCityNum = 3
+visited = 1
+visitedCity = Boston, new nextCity = Houston
+new nextCityNum = 16
+visited = 1
+visitedCity = Houston, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Houston, 16
+Stack at beginning of loop: 
+Dallas -> Houston
+nextCity = Glendale
+nextCityNum = 14
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Glendale, new nextCity = Cleveland
+new nextCityNum = 7
+visited = 1
+visitedCity = Cleveland, new nextCity = Columbia
+new nextCityNum = 8
+visited = 1
+visitedCity = Columbia, new nextCity = Dallas
+new nextCityNum = 9
+visited = 1
+visitedCity = Dallas, new nextCity = Denton
+new nextCityNum = 10
+visited = 1
+visitedCity = Denton, new nextCity = Denver
+new nextCityNum = 11
+visited = 1
+visitedCity = Denver, new nextCity = Chicago
+new nextCityNum = 5
+visited = 1
+visitedCity = Chicago, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Dallas, 9
+Stack at beginning of loop: 
+Dallas
+nextCity = Houston
+nextCityNum = 16
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Houston, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+end while loop
+Stack is empty, no possible flights, returning false
+--------------------------------------------------------------------------------
+
+Clearing cityStack if not empty, clearing marks on all cities
+Calling getCityNum for originCity and destinationCity
+destinationNumber = 5, originNumber = 7
+Pushing originCity on to empty stack and marking as visited
+topCity = Cleveland
+topCityNum gets originNumber
+
+begin while loop... will loop until stack is empty or destination is found
+Stack at beginning of loop: 
+Cleveland
+nextCity = Houston
+nextCityNum = 16
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Houston, 16
+Stack at beginning of loop: 
+Cleveland -> Houston
+nextCity = Glendale
+nextCityNum = 14
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Glendale, 14
+Stack at beginning of loop: 
+Cleveland -> Houston -> Glendale
+nextCity =  
+nextCityNum = -1
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Houston, 16
+Stack at beginning of loop: 
+Cleveland -> Houston
+nextCity = Glendale
+nextCityNum = 14
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Glendale, new nextCity = Cleveland
+new nextCityNum = 7
+visited = 1
+visitedCity = Cleveland, new nextCity = Columbia
+new nextCityNum = 8
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Columbia, 8
+Stack at beginning of loop: 
+Cleveland -> Houston -> Columbia
+nextCity = Houston
+nextCityNum = 16
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Houston, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Houston, 16
+Stack at beginning of loop: 
+Cleveland -> Houston
+nextCity = Glendale
+nextCityNum = 14
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Glendale, new nextCity = Cleveland
+new nextCityNum = 7
+visited = 1
+visitedCity = Cleveland, new nextCity = Columbia
+new nextCityNum = 8
+visited = 1
+visitedCity = Columbia, new nextCity = Dallas
+new nextCityNum = 9
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Dallas, 9
+Stack at beginning of loop: 
+Cleveland -> Houston -> Dallas
+nextCity = Houston
+nextCityNum = 16
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Houston, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Houston, 16
+Stack at beginning of loop: 
+Cleveland -> Houston
+nextCity = Glendale
+nextCityNum = 14
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Glendale, new nextCity = Cleveland
+new nextCityNum = 7
+visited = 1
+visitedCity = Cleveland, new nextCity = Columbia
+new nextCityNum = 8
+visited = 1
+visitedCity = Columbia, new nextCity = Dallas
+new nextCityNum = 9
+visited = 1
+visitedCity = Dallas, new nextCity = Denton
+new nextCityNum = 10
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Denton, 10
+Stack at beginning of loop: 
+Cleveland -> Houston -> Denton
+nextCity = Houston
+nextCityNum = 16
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Houston, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Houston, 16
+Stack at beginning of loop: 
+Cleveland -> Houston
+nextCity = Glendale
+nextCityNum = 14
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Glendale, new nextCity = Cleveland
+new nextCityNum = 7
+visited = 1
+visitedCity = Cleveland, new nextCity = Columbia
+new nextCityNum = 8
+visited = 1
+visitedCity = Columbia, new nextCity = Dallas
+new nextCityNum = 9
+visited = 1
+visitedCity = Dallas, new nextCity = Denton
+new nextCityNum = 10
+visited = 1
+visitedCity = Denton, new nextCity = Denver
+new nextCityNum = 11
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Denver, 11
+Stack at beginning of loop: 
+Cleveland -> Houston -> Denver
+nextCity = Houston
+nextCityNum = 16
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Houston, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Houston, 16
+Stack at beginning of loop: 
+Cleveland -> Houston
+nextCity = Glendale
+nextCityNum = 14
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Glendale, new nextCity = Cleveland
+new nextCityNum = 7
+visited = 1
+visitedCity = Cleveland, new nextCity = Columbia
+new nextCityNum = 8
+visited = 1
+visitedCity = Columbia, new nextCity = Dallas
+new nextCityNum = 9
+visited = 1
+visitedCity = Dallas, new nextCity = Denton
+new nextCityNum = 10
+visited = 1
+visitedCity = Denton, new nextCity = Denver
+new nextCityNum = 11
+visited = 1
+visitedCity = Denver, new nextCity = Chicago
+new nextCityNum = 5
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Chicago, 5
+end while loop
+Destination city was found, final path: 
+Cleveland -> Houston -> Chicago
+--------------------------------------------------------------------------------
+
+Clearing cityStack if not empty, clearing marks on all cities
+Calling getCityNum for originCity and destinationCity
+destinationNumber = 25, originNumber = 17
+Pushing originCity on to empty stack and marking as visited
+topCity = Indianapolis
+topCityNum gets originNumber
+
+begin while loop... will loop until stack is empty or destination is found
+Stack at beginning of loop: 
+Indianapolis
+nextCity = Los Angeles
+nextCityNum = 19
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Los Angeles, 19
+Stack at beginning of loop: 
+Indianapolis -> Los Angeles
+nextCity = Indianapolis
+nextCityNum = 17
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Indianapolis, new nextCity = Miami
+new nextCityNum = 20
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Miami, 20
+Stack at beginning of loop: 
+Indianapolis -> Los Angeles -> Miami
+nextCity = Los Angeles
+nextCityNum = 19
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Los Angeles, new nextCity = Atlanta
+new nextCityNum = 0
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Atlanta, 0
+Stack at beginning of loop: 
+Indianapolis -> Los Angeles -> Miami -> Atlanta
+nextCity = Chicago
+nextCityNum = 5
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Chicago, 5
+Stack at beginning of loop: 
+Indianapolis -> Los Angeles -> Miami -> Atlanta -> Chicago
+nextCity = Atlanta
+nextCityNum = 0
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Atlanta, new nextCity = Boise
+new nextCityNum = 2
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Boise, 2
+Stack at beginning of loop: 
+Indianapolis -> Los Angeles -> Miami -> Atlanta -> Chicago -> Boise
+nextCity = Chicago
+nextCityNum = 5
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Chicago, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Chicago, 5
+Stack at beginning of loop: 
+Indianapolis -> Los Angeles -> Miami -> Atlanta -> Chicago
+nextCity = Atlanta
+nextCityNum = 0
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Atlanta, new nextCity = Boise
+new nextCityNum = 2
+visited = 1
+visitedCity = Boise, new nextCity = Boston
+new nextCityNum = 3
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Boston, 3
+Stack at beginning of loop: 
+Indianapolis -> Los Angeles -> Miami -> Atlanta -> Chicago -> Boston
+nextCity = Chicago
+nextCityNum = 5
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Chicago, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Chicago, 5
+Stack at beginning of loop: 
+Indianapolis -> Los Angeles -> Miami -> Atlanta -> Chicago
+nextCity = Atlanta
+nextCityNum = 0
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Atlanta, new nextCity = Boise
+new nextCityNum = 2
+visited = 1
+visitedCity = Boise, new nextCity = Boston
+new nextCityNum = 3
+visited = 1
+visitedCity = Boston, new nextCity = Houston
+new nextCityNum = 16
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Houston, 16
+Stack at beginning of loop: 
+Indianapolis -> Los Angeles -> Miami -> Atlanta -> Chicago -> Houston
+nextCity = Glendale
+nextCityNum = 14
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Glendale, 14
+Stack at beginning of loop: 
+Indianapolis -> Los Angeles -> Miami -> Atlanta -> Chicago -> Houston -> Glendale
+nextCity =  
+nextCityNum = -1
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Houston, 16
+Stack at beginning of loop: 
+Indianapolis -> Los Angeles -> Miami -> Atlanta -> Chicago -> Houston
+nextCity = Glendale
+nextCityNum = 14
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Glendale, new nextCity = Cleveland
+new nextCityNum = 7
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Cleveland, 7
+Stack at beginning of loop: 
+Indianapolis -> Los Angeles -> Miami -> Atlanta -> Chicago -> Houston -> Cleveland
+nextCity = Houston
+nextCityNum = 16
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Houston, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Houston, 16
+Stack at beginning of loop: 
+Indianapolis -> Los Angeles -> Miami -> Atlanta -> Chicago -> Houston
+nextCity = Glendale
+nextCityNum = 14
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Glendale, new nextCity = Cleveland
+new nextCityNum = 7
+visited = 1
+visitedCity = Cleveland, new nextCity = Columbia
+new nextCityNum = 8
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Columbia, 8
+Stack at beginning of loop: 
+Indianapolis -> Los Angeles -> Miami -> Atlanta -> Chicago -> Houston -> Columbia
+nextCity = Houston
+nextCityNum = 16
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Houston, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Houston, 16
+Stack at beginning of loop: 
+Indianapolis -> Los Angeles -> Miami -> Atlanta -> Chicago -> Houston
+nextCity = Glendale
+nextCityNum = 14
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Glendale, new nextCity = Cleveland
+new nextCityNum = 7
+visited = 1
+visitedCity = Cleveland, new nextCity = Columbia
+new nextCityNum = 8
+visited = 1
+visitedCity = Columbia, new nextCity = Dallas
+new nextCityNum = 9
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Dallas, 9
+Stack at beginning of loop: 
+Indianapolis -> Los Angeles -> Miami -> Atlanta -> Chicago -> Houston -> Dallas
+nextCity = Houston
+nextCityNum = 16
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Houston, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Houston, 16
+Stack at beginning of loop: 
+Indianapolis -> Los Angeles -> Miami -> Atlanta -> Chicago -> Houston
+nextCity = Glendale
+nextCityNum = 14
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Glendale, new nextCity = Cleveland
+new nextCityNum = 7
+visited = 1
+visitedCity = Cleveland, new nextCity = Columbia
+new nextCityNum = 8
+visited = 1
+visitedCity = Columbia, new nextCity = Dallas
+new nextCityNum = 9
+visited = 1
+visitedCity = Dallas, new nextCity = Denton
+new nextCityNum = 10
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Denton, 10
+Stack at beginning of loop: 
+Indianapolis -> Los Angeles -> Miami -> Atlanta -> Chicago -> Houston -> Denton
+nextCity = Houston
+nextCityNum = 16
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Houston, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Houston, 16
+Stack at beginning of loop: 
+Indianapolis -> Los Angeles -> Miami -> Atlanta -> Chicago -> Houston
+nextCity = Glendale
+nextCityNum = 14
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Glendale, new nextCity = Cleveland
+new nextCityNum = 7
+visited = 1
+visitedCity = Cleveland, new nextCity = Columbia
+new nextCityNum = 8
+visited = 1
+visitedCity = Columbia, new nextCity = Dallas
+new nextCityNum = 9
+visited = 1
+visitedCity = Dallas, new nextCity = Denton
+new nextCityNum = 10
+visited = 1
+visitedCity = Denton, new nextCity = Denver
+new nextCityNum = 11
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Denver, 11
+Stack at beginning of loop: 
+Indianapolis -> Los Angeles -> Miami -> Atlanta -> Chicago -> Houston -> Denver
+nextCity = Houston
+nextCityNum = 16
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Houston, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Houston, 16
+Stack at beginning of loop: 
+Indianapolis -> Los Angeles -> Miami -> Atlanta -> Chicago -> Houston
+nextCity = Glendale
+nextCityNum = 14
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Glendale, new nextCity = Cleveland
+new nextCityNum = 7
+visited = 1
+visitedCity = Cleveland, new nextCity = Columbia
+new nextCityNum = 8
+visited = 1
+visitedCity = Columbia, new nextCity = Dallas
+new nextCityNum = 9
+visited = 1
+visitedCity = Dallas, new nextCity = Denton
+new nextCityNum = 10
+visited = 1
+visitedCity = Denton, new nextCity = Denver
+new nextCityNum = 11
+visited = 1
+visitedCity = Denver, new nextCity = Chicago
+new nextCityNum = 5
+visited = 1
+visitedCity = Chicago, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Chicago, 5
+Stack at beginning of loop: 
+Indianapolis -> Los Angeles -> Miami -> Atlanta -> Chicago
+nextCity = Atlanta
+nextCityNum = 0
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Atlanta, new nextCity = Boise
+new nextCityNum = 2
+visited = 1
+visitedCity = Boise, new nextCity = Boston
+new nextCityNum = 3
+visited = 1
+visitedCity = Boston, new nextCity = Houston
+new nextCityNum = 16
+visited = 1
+visitedCity = Houston, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Atlanta, 0
+Stack at beginning of loop: 
+Indianapolis -> Los Angeles -> Miami -> Atlanta
+nextCity = Chicago
+nextCityNum = 5
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Chicago, new nextCity = Miami
+new nextCityNum = 20
+visited = 1
+visitedCity = Miami, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Miami, 20
+Stack at beginning of loop: 
+Indianapolis -> Los Angeles -> Miami
+nextCity = Los Angeles
+nextCityNum = 19
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Los Angeles, new nextCity = Atlanta
+new nextCityNum = 0
+visited = 1
+visitedCity = Atlanta, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Los Angeles, 19
+Stack at beginning of loop: 
+Indianapolis -> Los Angeles
+nextCity = Indianapolis
+nextCityNum = 17
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Indianapolis, new nextCity = Miami
+new nextCityNum = 20
+visited = 1
+visitedCity = Miami, new nextCity = San Francisco
+new nextCityNum = 25
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: San Francisco, 25
+end while loop
+Destination city was found, final path: 
+Indianapolis -> Los Angeles -> San Francisco
+--------------------------------------------------------------------------------
+
+Clearing cityStack if not empty, clearing marks on all cities
+Calling getCityNum for originCity and destinationCity
+destinationNumber = 27, originNumber = 25
+Pushing originCity on to empty stack and marking as visited
+topCity = San Francisco
+topCityNum gets originNumber
+
+begin while loop... will loop until stack is empty or destination is found
+Stack at beginning of loop: 
+San Francisco
+nextCity = Los Angeles
+nextCityNum = 19
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Los Angeles, 19
+Stack at beginning of loop: 
+San Francisco -> Los Angeles
+nextCity = Indianapolis
+nextCityNum = 17
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Indianapolis, 17
+Stack at beginning of loop: 
+San Francisco -> Los Angeles -> Indianapolis
+nextCity = Los Angeles
+nextCityNum = 19
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Los Angeles, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Los Angeles, 19
+Stack at beginning of loop: 
+San Francisco -> Los Angeles
+nextCity = Indianapolis
+nextCityNum = 17
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Indianapolis, new nextCity = Miami
+new nextCityNum = 20
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Miami, 20
+Stack at beginning of loop: 
+San Francisco -> Los Angeles -> Miami
+nextCity = Los Angeles
+nextCityNum = 19
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Los Angeles, new nextCity = Atlanta
+new nextCityNum = 0
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Atlanta, 0
+Stack at beginning of loop: 
+San Francisco -> Los Angeles -> Miami -> Atlanta
+nextCity = Chicago
+nextCityNum = 5
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Chicago, 5
+Stack at beginning of loop: 
+San Francisco -> Los Angeles -> Miami -> Atlanta -> Chicago
+nextCity = Atlanta
+nextCityNum = 0
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Atlanta, new nextCity = Boise
+new nextCityNum = 2
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Boise, 2
+Stack at beginning of loop: 
+San Francisco -> Los Angeles -> Miami -> Atlanta -> Chicago -> Boise
+nextCity = Chicago
+nextCityNum = 5
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Chicago, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Chicago, 5
+Stack at beginning of loop: 
+San Francisco -> Los Angeles -> Miami -> Atlanta -> Chicago
+nextCity = Atlanta
+nextCityNum = 0
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Atlanta, new nextCity = Boise
+new nextCityNum = 2
+visited = 1
+visitedCity = Boise, new nextCity = Boston
+new nextCityNum = 3
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Boston, 3
+Stack at beginning of loop: 
+San Francisco -> Los Angeles -> Miami -> Atlanta -> Chicago -> Boston
+nextCity = Chicago
+nextCityNum = 5
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Chicago, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Chicago, 5
+Stack at beginning of loop: 
+San Francisco -> Los Angeles -> Miami -> Atlanta -> Chicago
+nextCity = Atlanta
+nextCityNum = 0
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Atlanta, new nextCity = Boise
+new nextCityNum = 2
+visited = 1
+visitedCity = Boise, new nextCity = Boston
+new nextCityNum = 3
+visited = 1
+visitedCity = Boston, new nextCity = Houston
+new nextCityNum = 16
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Houston, 16
+Stack at beginning of loop: 
+San Francisco -> Los Angeles -> Miami -> Atlanta -> Chicago -> Houston
+nextCity = Glendale
+nextCityNum = 14
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Glendale, 14
+Stack at beginning of loop: 
+San Francisco -> Los Angeles -> Miami -> Atlanta -> Chicago -> Houston -> Glendale
+nextCity =  
+nextCityNum = -1
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Houston, 16
+Stack at beginning of loop: 
+San Francisco -> Los Angeles -> Miami -> Atlanta -> Chicago -> Houston
+nextCity = Glendale
+nextCityNum = 14
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Glendale, new nextCity = Cleveland
+new nextCityNum = 7
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Cleveland, 7
+Stack at beginning of loop: 
+San Francisco -> Los Angeles -> Miami -> Atlanta -> Chicago -> Houston -> Cleveland
+nextCity = Houston
+nextCityNum = 16
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Houston, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Houston, 16
+Stack at beginning of loop: 
+San Francisco -> Los Angeles -> Miami -> Atlanta -> Chicago -> Houston
+nextCity = Glendale
+nextCityNum = 14
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Glendale, new nextCity = Cleveland
+new nextCityNum = 7
+visited = 1
+visitedCity = Cleveland, new nextCity = Columbia
+new nextCityNum = 8
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Columbia, 8
+Stack at beginning of loop: 
+San Francisco -> Los Angeles -> Miami -> Atlanta -> Chicago -> Houston -> Columbia
+nextCity = Houston
+nextCityNum = 16
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Houston, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Houston, 16
+Stack at beginning of loop: 
+San Francisco -> Los Angeles -> Miami -> Atlanta -> Chicago -> Houston
+nextCity = Glendale
+nextCityNum = 14
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Glendale, new nextCity = Cleveland
+new nextCityNum = 7
+visited = 1
+visitedCity = Cleveland, new nextCity = Columbia
+new nextCityNum = 8
+visited = 1
+visitedCity = Columbia, new nextCity = Dallas
+new nextCityNum = 9
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Dallas, 9
+Stack at beginning of loop: 
+San Francisco -> Los Angeles -> Miami -> Atlanta -> Chicago -> Houston -> Dallas
+nextCity = Houston
+nextCityNum = 16
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Houston, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Houston, 16
+Stack at beginning of loop: 
+San Francisco -> Los Angeles -> Miami -> Atlanta -> Chicago -> Houston
+nextCity = Glendale
+nextCityNum = 14
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Glendale, new nextCity = Cleveland
+new nextCityNum = 7
+visited = 1
+visitedCity = Cleveland, new nextCity = Columbia
+new nextCityNum = 8
+visited = 1
+visitedCity = Columbia, new nextCity = Dallas
+new nextCityNum = 9
+visited = 1
+visitedCity = Dallas, new nextCity = Denton
+new nextCityNum = 10
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Denton, 10
+Stack at beginning of loop: 
+San Francisco -> Los Angeles -> Miami -> Atlanta -> Chicago -> Houston -> Denton
+nextCity = Houston
+nextCityNum = 16
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Houston, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Houston, 16
+Stack at beginning of loop: 
+San Francisco -> Los Angeles -> Miami -> Atlanta -> Chicago -> Houston
+nextCity = Glendale
+nextCityNum = 14
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Glendale, new nextCity = Cleveland
+new nextCityNum = 7
+visited = 1
+visitedCity = Cleveland, new nextCity = Columbia
+new nextCityNum = 8
+visited = 1
+visitedCity = Columbia, new nextCity = Dallas
+new nextCityNum = 9
+visited = 1
+visitedCity = Dallas, new nextCity = Denton
+new nextCityNum = 10
+visited = 1
+visitedCity = Denton, new nextCity = Denver
+new nextCityNum = 11
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Denver, 11
+Stack at beginning of loop: 
+San Francisco -> Los Angeles -> Miami -> Atlanta -> Chicago -> Houston -> Denver
+nextCity = Houston
+nextCityNum = 16
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Houston, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Houston, 16
+Stack at beginning of loop: 
+San Francisco -> Los Angeles -> Miami -> Atlanta -> Chicago -> Houston
+nextCity = Glendale
+nextCityNum = 14
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Glendale, new nextCity = Cleveland
+new nextCityNum = 7
+visited = 1
+visitedCity = Cleveland, new nextCity = Columbia
+new nextCityNum = 8
+visited = 1
+visitedCity = Columbia, new nextCity = Dallas
+new nextCityNum = 9
+visited = 1
+visitedCity = Dallas, new nextCity = Denton
+new nextCityNum = 10
+visited = 1
+visitedCity = Denton, new nextCity = Denver
+new nextCityNum = 11
+visited = 1
+visitedCity = Denver, new nextCity = Chicago
+new nextCityNum = 5
+visited = 1
+visitedCity = Chicago, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Chicago, 5
+Stack at beginning of loop: 
+San Francisco -> Los Angeles -> Miami -> Atlanta -> Chicago
+nextCity = Atlanta
+nextCityNum = 0
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Atlanta, new nextCity = Boise
+new nextCityNum = 2
+visited = 1
+visitedCity = Boise, new nextCity = Boston
+new nextCityNum = 3
+visited = 1
+visitedCity = Boston, new nextCity = Houston
+new nextCityNum = 16
+visited = 1
+visitedCity = Houston, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Atlanta, 0
+Stack at beginning of loop: 
+San Francisco -> Los Angeles -> Miami -> Atlanta
+nextCity = Chicago
+nextCityNum = 5
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Chicago, new nextCity = Miami
+new nextCityNum = 20
+visited = 1
+visitedCity = Miami, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Miami, 20
+Stack at beginning of loop: 
+San Francisco -> Los Angeles -> Miami
+nextCity = Los Angeles
+nextCityNum = 19
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Los Angeles, new nextCity = Atlanta
+new nextCityNum = 0
+visited = 1
+visitedCity = Atlanta, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Los Angeles, 19
+Stack at beginning of loop: 
+San Francisco -> Los Angeles
+nextCity = Indianapolis
+nextCityNum = 17
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Indianapolis, new nextCity = Miami
+new nextCityNum = 20
+visited = 1
+visitedCity = Miami, new nextCity = San Francisco
+new nextCityNum = 25
+visited = 1
+visitedCity = San Francisco, new nextCity = Tampa
+new nextCityNum = 26
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Tampa, 26
+Stack at beginning of loop: 
+San Francisco -> Los Angeles -> Tampa
+nextCity = Los Angeles
+nextCityNum = 19
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Los Angeles, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Los Angeles, 19
+Stack at beginning of loop: 
+San Francisco -> Los Angeles
+nextCity = Indianapolis
+nextCityNum = 17
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Indianapolis, new nextCity = Miami
+new nextCityNum = 20
+visited = 1
+visitedCity = Miami, new nextCity = San Francisco
+new nextCityNum = 25
+visited = 1
+visitedCity = San Francisco, new nextCity = Tampa
+new nextCityNum = 26
+visited = 1
+visitedCity = Tampa, new nextCity = Washington
+new nextCityNum = 27
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Washington, 27
+end while loop
+Destination city was found, final path: 
+San Francisco -> Los Angeles -> Washington
+--------------------------------------------------------------------------------
+
+Clearing cityStack if not empty, clearing marks on all cities
+Calling getCityNum for originCity and destinationCity
+destinationNumber = 8, originNumber = 3
+Pushing originCity on to empty stack and marking as visited
+topCity = Boston
+topCityNum gets originNumber
+
+begin while loop... will loop until stack is empty or destination is found
+Stack at beginning of loop: 
+Boston
+nextCity = Chicago
+nextCityNum = 5
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Chicago, 5
+Stack at beginning of loop: 
+Boston -> Chicago
+nextCity = Atlanta
+nextCityNum = 0
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Atlanta, 0
+Stack at beginning of loop: 
+Boston -> Chicago -> Atlanta
+nextCity = Chicago
+nextCityNum = 5
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Chicago, new nextCity = Miami
+new nextCityNum = 20
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Miami, 20
+Stack at beginning of loop: 
+Boston -> Chicago -> Atlanta -> Miami
+nextCity = Los Angeles
+nextCityNum = 19
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Los Angeles, 19
+Stack at beginning of loop: 
+Boston -> Chicago -> Atlanta -> Miami -> Los Angeles
+nextCity = Indianapolis
+nextCityNum = 17
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Indianapolis, 17
+Stack at beginning of loop: 
+Boston -> Chicago -> Atlanta -> Miami -> Los Angeles -> Indianapolis
+nextCity = Los Angeles
+nextCityNum = 19
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Los Angeles, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Los Angeles, 19
+Stack at beginning of loop: 
+Boston -> Chicago -> Atlanta -> Miami -> Los Angeles
+nextCity = Indianapolis
+nextCityNum = 17
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Indianapolis, new nextCity = Miami
+new nextCityNum = 20
+visited = 1
+visitedCity = Miami, new nextCity = San Francisco
+new nextCityNum = 25
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: San Francisco, 25
+Stack at beginning of loop: 
+Boston -> Chicago -> Atlanta -> Miami -> Los Angeles -> San Francisco
+nextCity = Los Angeles
+nextCityNum = 19
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Los Angeles, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Los Angeles, 19
+Stack at beginning of loop: 
+Boston -> Chicago -> Atlanta -> Miami -> Los Angeles
+nextCity = Indianapolis
+nextCityNum = 17
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Indianapolis, new nextCity = Miami
+new nextCityNum = 20
+visited = 1
+visitedCity = Miami, new nextCity = San Francisco
+new nextCityNum = 25
+visited = 1
+visitedCity = San Francisco, new nextCity = Tampa
+new nextCityNum = 26
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Tampa, 26
+Stack at beginning of loop: 
+Boston -> Chicago -> Atlanta -> Miami -> Los Angeles -> Tampa
+nextCity = Los Angeles
+nextCityNum = 19
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Los Angeles, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Los Angeles, 19
+Stack at beginning of loop: 
+Boston -> Chicago -> Atlanta -> Miami -> Los Angeles
+nextCity = Indianapolis
+nextCityNum = 17
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Indianapolis, new nextCity = Miami
+new nextCityNum = 20
+visited = 1
+visitedCity = Miami, new nextCity = San Francisco
+new nextCityNum = 25
+visited = 1
+visitedCity = San Francisco, new nextCity = Tampa
+new nextCityNum = 26
+visited = 1
+visitedCity = Tampa, new nextCity = Washington
+new nextCityNum = 27
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Washington, 27
+Stack at beginning of loop: 
+Boston -> Chicago -> Atlanta -> Miami -> Los Angeles -> Washington
+nextCity = Los Angeles
+nextCityNum = 19
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Los Angeles, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Los Angeles, 19
+Stack at beginning of loop: 
+Boston -> Chicago -> Atlanta -> Miami -> Los Angeles
+nextCity = Indianapolis
+nextCityNum = 17
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Indianapolis, new nextCity = Miami
+new nextCityNum = 20
+visited = 1
+visitedCity = Miami, new nextCity = San Francisco
+new nextCityNum = 25
+visited = 1
+visitedCity = San Francisco, new nextCity = Tampa
+new nextCityNum = 26
+visited = 1
+visitedCity = Tampa, new nextCity = Washington
+new nextCityNum = 27
+visited = 1
+visitedCity = Washington, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Miami, 20
+Stack at beginning of loop: 
+Boston -> Chicago -> Atlanta -> Miami
+nextCity = Los Angeles
+nextCityNum = 19
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Los Angeles, new nextCity = Atlanta
+new nextCityNum = 0
+visited = 1
+visitedCity = Atlanta, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Atlanta, 0
+Stack at beginning of loop: 
+Boston -> Chicago -> Atlanta
+nextCity = Chicago
+nextCityNum = 5
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Chicago, new nextCity = Miami
+new nextCityNum = 20
+visited = 1
+visitedCity = Miami, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Chicago, 5
+Stack at beginning of loop: 
+Boston -> Chicago
+nextCity = Atlanta
+nextCityNum = 0
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Atlanta, new nextCity = Boise
+new nextCityNum = 2
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Boise, 2
+Stack at beginning of loop: 
+Boston -> Chicago -> Boise
+nextCity = Chicago
+nextCityNum = 5
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Chicago, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Chicago, 5
+Stack at beginning of loop: 
+Boston -> Chicago
+nextCity = Atlanta
+nextCityNum = 0
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Atlanta, new nextCity = Boise
+new nextCityNum = 2
+visited = 1
+visitedCity = Boise, new nextCity = Boston
+new nextCityNum = 3
+visited = 1
+visitedCity = Boston, new nextCity = Houston
+new nextCityNum = 16
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Houston, 16
+Stack at beginning of loop: 
+Boston -> Chicago -> Houston
+nextCity = Glendale
+nextCityNum = 14
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Glendale, 14
+Stack at beginning of loop: 
+Boston -> Chicago -> Houston -> Glendale
+nextCity =  
+nextCityNum = -1
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Houston, 16
+Stack at beginning of loop: 
+Boston -> Chicago -> Houston
+nextCity = Glendale
+nextCityNum = 14
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Glendale, new nextCity = Cleveland
+new nextCityNum = 7
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Cleveland, 7
+Stack at beginning of loop: 
+Boston -> Chicago -> Houston -> Cleveland
+nextCity = Houston
+nextCityNum = 16
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Houston, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Houston, 16
+Stack at beginning of loop: 
+Boston -> Chicago -> Houston
+nextCity = Glendale
+nextCityNum = 14
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Glendale, new nextCity = Cleveland
+new nextCityNum = 7
+visited = 1
+visitedCity = Cleveland, new nextCity = Columbia
+new nextCityNum = 8
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Columbia, 8
+end while loop
+Destination city was found, final path: 
+Boston -> Chicago -> Houston -> Columbia
+--------------------------------------------------------------------------------
+
+Clearing cityStack if not empty, clearing marks on all cities
+Calling getCityNum for originCity and destinationCity
+destinationNumber = 11, originNumber = 20
+Pushing originCity on to empty stack and marking as visited
+topCity = Miami
+topCityNum gets originNumber
+
+begin while loop... will loop until stack is empty or destination is found
+Stack at beginning of loop: 
+Miami
+nextCity = Los Angeles
+nextCityNum = 19
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Los Angeles, 19
+Stack at beginning of loop: 
+Miami -> Los Angeles
+nextCity = Indianapolis
+nextCityNum = 17
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Indianapolis, 17
+Stack at beginning of loop: 
+Miami -> Los Angeles -> Indianapolis
+nextCity = Los Angeles
+nextCityNum = 19
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Los Angeles, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Los Angeles, 19
+Stack at beginning of loop: 
+Miami -> Los Angeles
+nextCity = Indianapolis
+nextCityNum = 17
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Indianapolis, new nextCity = Miami
+new nextCityNum = 20
+visited = 1
+visitedCity = Miami, new nextCity = San Francisco
+new nextCityNum = 25
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: San Francisco, 25
+Stack at beginning of loop: 
+Miami -> Los Angeles -> San Francisco
+nextCity = Los Angeles
+nextCityNum = 19
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Los Angeles, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Los Angeles, 19
+Stack at beginning of loop: 
+Miami -> Los Angeles
+nextCity = Indianapolis
+nextCityNum = 17
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Indianapolis, new nextCity = Miami
+new nextCityNum = 20
+visited = 1
+visitedCity = Miami, new nextCity = San Francisco
+new nextCityNum = 25
+visited = 1
+visitedCity = San Francisco, new nextCity = Tampa
+new nextCityNum = 26
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Tampa, 26
+Stack at beginning of loop: 
+Miami -> Los Angeles -> Tampa
+nextCity = Los Angeles
+nextCityNum = 19
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Los Angeles, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Los Angeles, 19
+Stack at beginning of loop: 
+Miami -> Los Angeles
+nextCity = Indianapolis
+nextCityNum = 17
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Indianapolis, new nextCity = Miami
+new nextCityNum = 20
+visited = 1
+visitedCity = Miami, new nextCity = San Francisco
+new nextCityNum = 25
+visited = 1
+visitedCity = San Francisco, new nextCity = Tampa
+new nextCityNum = 26
+visited = 1
+visitedCity = Tampa, new nextCity = Washington
+new nextCityNum = 27
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Washington, 27
+Stack at beginning of loop: 
+Miami -> Los Angeles -> Washington
+nextCity = Los Angeles
+nextCityNum = 19
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Los Angeles, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Los Angeles, 19
+Stack at beginning of loop: 
+Miami -> Los Angeles
+nextCity = Indianapolis
+nextCityNum = 17
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Indianapolis, new nextCity = Miami
+new nextCityNum = 20
+visited = 1
+visitedCity = Miami, new nextCity = San Francisco
+new nextCityNum = 25
+visited = 1
+visitedCity = San Francisco, new nextCity = Tampa
+new nextCityNum = 26
+visited = 1
+visitedCity = Tampa, new nextCity = Washington
+new nextCityNum = 27
+visited = 1
+visitedCity = Washington, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Miami, 20
+Stack at beginning of loop: 
+Miami
+nextCity = Los Angeles
+nextCityNum = 19
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Los Angeles, new nextCity = Atlanta
+new nextCityNum = 0
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Atlanta, 0
+Stack at beginning of loop: 
+Miami -> Atlanta
+nextCity = Chicago
+nextCityNum = 5
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Chicago, 5
+Stack at beginning of loop: 
+Miami -> Atlanta -> Chicago
+nextCity = Atlanta
+nextCityNum = 0
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Atlanta, new nextCity = Boise
+new nextCityNum = 2
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Boise, 2
+Stack at beginning of loop: 
+Miami -> Atlanta -> Chicago -> Boise
+nextCity = Chicago
+nextCityNum = 5
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Chicago, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Chicago, 5
+Stack at beginning of loop: 
+Miami -> Atlanta -> Chicago
+nextCity = Atlanta
+nextCityNum = 0
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Atlanta, new nextCity = Boise
+new nextCityNum = 2
+visited = 1
+visitedCity = Boise, new nextCity = Boston
+new nextCityNum = 3
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Boston, 3
+Stack at beginning of loop: 
+Miami -> Atlanta -> Chicago -> Boston
+nextCity = Chicago
+nextCityNum = 5
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Chicago, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Chicago, 5
+Stack at beginning of loop: 
+Miami -> Atlanta -> Chicago
+nextCity = Atlanta
+nextCityNum = 0
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Atlanta, new nextCity = Boise
+new nextCityNum = 2
+visited = 1
+visitedCity = Boise, new nextCity = Boston
+new nextCityNum = 3
+visited = 1
+visitedCity = Boston, new nextCity = Houston
+new nextCityNum = 16
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Houston, 16
+Stack at beginning of loop: 
+Miami -> Atlanta -> Chicago -> Houston
+nextCity = Glendale
+nextCityNum = 14
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Glendale, 14
+Stack at beginning of loop: 
+Miami -> Atlanta -> Chicago -> Houston -> Glendale
+nextCity =  
+nextCityNum = -1
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Houston, 16
+Stack at beginning of loop: 
+Miami -> Atlanta -> Chicago -> Houston
+nextCity = Glendale
+nextCityNum = 14
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Glendale, new nextCity = Cleveland
+new nextCityNum = 7
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Cleveland, 7
+Stack at beginning of loop: 
+Miami -> Atlanta -> Chicago -> Houston -> Cleveland
+nextCity = Houston
+nextCityNum = 16
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Houston, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Houston, 16
+Stack at beginning of loop: 
+Miami -> Atlanta -> Chicago -> Houston
+nextCity = Glendale
+nextCityNum = 14
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Glendale, new nextCity = Cleveland
+new nextCityNum = 7
+visited = 1
+visitedCity = Cleveland, new nextCity = Columbia
+new nextCityNum = 8
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Columbia, 8
+Stack at beginning of loop: 
+Miami -> Atlanta -> Chicago -> Houston -> Columbia
+nextCity = Houston
+nextCityNum = 16
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Houston, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Houston, 16
+Stack at beginning of loop: 
+Miami -> Atlanta -> Chicago -> Houston
+nextCity = Glendale
+nextCityNum = 14
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Glendale, new nextCity = Cleveland
+new nextCityNum = 7
+visited = 1
+visitedCity = Cleveland, new nextCity = Columbia
+new nextCityNum = 8
+visited = 1
+visitedCity = Columbia, new nextCity = Dallas
+new nextCityNum = 9
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Dallas, 9
+Stack at beginning of loop: 
+Miami -> Atlanta -> Chicago -> Houston -> Dallas
+nextCity = Houston
+nextCityNum = 16
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Houston, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Houston, 16
+Stack at beginning of loop: 
+Miami -> Atlanta -> Chicago -> Houston
+nextCity = Glendale
+nextCityNum = 14
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Glendale, new nextCity = Cleveland
+new nextCityNum = 7
+visited = 1
+visitedCity = Cleveland, new nextCity = Columbia
+new nextCityNum = 8
+visited = 1
+visitedCity = Columbia, new nextCity = Dallas
+new nextCityNum = 9
+visited = 1
+visitedCity = Dallas, new nextCity = Denton
+new nextCityNum = 10
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Denton, 10
+Stack at beginning of loop: 
+Miami -> Atlanta -> Chicago -> Houston -> Denton
+nextCity = Houston
+nextCityNum = 16
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Houston, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Houston, 16
+Stack at beginning of loop: 
+Miami -> Atlanta -> Chicago -> Houston
+nextCity = Glendale
+nextCityNum = 14
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Glendale, new nextCity = Cleveland
+new nextCityNum = 7
+visited = 1
+visitedCity = Cleveland, new nextCity = Columbia
+new nextCityNum = 8
+visited = 1
+visitedCity = Columbia, new nextCity = Dallas
+new nextCityNum = 9
+visited = 1
+visitedCity = Dallas, new nextCity = Denton
+new nextCityNum = 10
+visited = 1
+visitedCity = Denton, new nextCity = Denver
+new nextCityNum = 11
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Denver, 11
+end while loop
+Destination city was found, final path: 
+Miami -> Atlanta -> Chicago -> Houston -> Denver
+--------------------------------------------------------------------------------
+
+Clearing cityStack if not empty, clearing marks on all cities
+Calling getCityNum for originCity and destinationCity
+destinationNumber = 2, originNumber = 20
+Pushing originCity on to empty stack and marking as visited
+topCity = Miami
+topCityNum gets originNumber
+
+begin while loop... will loop until stack is empty or destination is found
+Stack at beginning of loop: 
+Miami
+nextCity = Los Angeles
+nextCityNum = 19
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Los Angeles, 19
+Stack at beginning of loop: 
+Miami -> Los Angeles
+nextCity = Indianapolis
+nextCityNum = 17
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Indianapolis, 17
+Stack at beginning of loop: 
+Miami -> Los Angeles -> Indianapolis
+nextCity = Los Angeles
+nextCityNum = 19
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Los Angeles, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Los Angeles, 19
+Stack at beginning of loop: 
+Miami -> Los Angeles
+nextCity = Indianapolis
+nextCityNum = 17
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Indianapolis, new nextCity = Miami
+new nextCityNum = 20
+visited = 1
+visitedCity = Miami, new nextCity = San Francisco
+new nextCityNum = 25
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: San Francisco, 25
+Stack at beginning of loop: 
+Miami -> Los Angeles -> San Francisco
+nextCity = Los Angeles
+nextCityNum = 19
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Los Angeles, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Los Angeles, 19
+Stack at beginning of loop: 
+Miami -> Los Angeles
+nextCity = Indianapolis
+nextCityNum = 17
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Indianapolis, new nextCity = Miami
+new nextCityNum = 20
+visited = 1
+visitedCity = Miami, new nextCity = San Francisco
+new nextCityNum = 25
+visited = 1
+visitedCity = San Francisco, new nextCity = Tampa
+new nextCityNum = 26
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Tampa, 26
+Stack at beginning of loop: 
+Miami -> Los Angeles -> Tampa
+nextCity = Los Angeles
+nextCityNum = 19
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Los Angeles, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Los Angeles, 19
+Stack at beginning of loop: 
+Miami -> Los Angeles
+nextCity = Indianapolis
+nextCityNum = 17
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Indianapolis, new nextCity = Miami
+new nextCityNum = 20
+visited = 1
+visitedCity = Miami, new nextCity = San Francisco
+new nextCityNum = 25
+visited = 1
+visitedCity = San Francisco, new nextCity = Tampa
+new nextCityNum = 26
+visited = 1
+visitedCity = Tampa, new nextCity = Washington
+new nextCityNum = 27
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Washington, 27
+Stack at beginning of loop: 
+Miami -> Los Angeles -> Washington
+nextCity = Los Angeles
+nextCityNum = 19
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Los Angeles, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Los Angeles, 19
+Stack at beginning of loop: 
+Miami -> Los Angeles
+nextCity = Indianapolis
+nextCityNum = 17
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Indianapolis, new nextCity = Miami
+new nextCityNum = 20
+visited = 1
+visitedCity = Miami, new nextCity = San Francisco
+new nextCityNum = 25
+visited = 1
+visitedCity = San Francisco, new nextCity = Tampa
+new nextCityNum = 26
+visited = 1
+visitedCity = Tampa, new nextCity = Washington
+new nextCityNum = 27
+visited = 1
+visitedCity = Washington, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Miami, 20
+Stack at beginning of loop: 
+Miami
+nextCity = Los Angeles
+nextCityNum = 19
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Los Angeles, new nextCity = Atlanta
+new nextCityNum = 0
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Atlanta, 0
+Stack at beginning of loop: 
+Miami -> Atlanta
+nextCity = Chicago
+nextCityNum = 5
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Chicago, 5
+Stack at beginning of loop: 
+Miami -> Atlanta -> Chicago
+nextCity = Atlanta
+nextCityNum = 0
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Atlanta, new nextCity = Boise
+new nextCityNum = 2
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Boise, 2
+end while loop
+Destination city was found, final path: 
+Miami -> Atlanta -> Chicago -> Boise
+--------------------------------------------------------------------------------
+
+Clearing cityStack if not empty, clearing marks on all cities
+Calling getCityNum for originCity and destinationCity
+destinationNumber = 16, originNumber = 23
+Pushing originCity on to empty stack and marking as visited
+topCity = Reno
+topCityNum gets originNumber
+
+begin while loop... will loop until stack is empty or destination is found
+Stack at beginning of loop: 
+Reno
+nextCity =  
+nextCityNum = -1
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+end while loop
+Stack is empty, no possible flights, returning false
+--------------------------------------------------------------------------------
+
+Clearing cityStack if not empty, clearing marks on all cities
+Calling getCityNum for originCity and destinationCity
+destinationNumber = 5, originNumber = 25
+Pushing originCity on to empty stack and marking as visited
+topCity = San Francisco
+topCityNum gets originNumber
+
+begin while loop... will loop until stack is empty or destination is found
+Stack at beginning of loop: 
+San Francisco
+nextCity = Los Angeles
+nextCityNum = 19
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Los Angeles, 19
+Stack at beginning of loop: 
+San Francisco -> Los Angeles
+nextCity = Indianapolis
+nextCityNum = 17
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Indianapolis, 17
+Stack at beginning of loop: 
+San Francisco -> Los Angeles -> Indianapolis
+nextCity = Los Angeles
+nextCityNum = 19
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Los Angeles, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Los Angeles, 19
+Stack at beginning of loop: 
+San Francisco -> Los Angeles
+nextCity = Indianapolis
+nextCityNum = 17
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Indianapolis, new nextCity = Miami
+new nextCityNum = 20
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Miami, 20
+Stack at beginning of loop: 
+San Francisco -> Los Angeles -> Miami
+nextCity = Los Angeles
+nextCityNum = 19
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Los Angeles, new nextCity = Atlanta
+new nextCityNum = 0
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Atlanta, 0
+Stack at beginning of loop: 
+San Francisco -> Los Angeles -> Miami -> Atlanta
+nextCity = Chicago
+nextCityNum = 5
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Chicago, 5
+end while loop
+Destination city was found, final path: 
+San Francisco -> Los Angeles -> Miami -> Atlanta -> Chicago
+--------------------------------------------------------------------------------
+
+Clearing cityStack if not empty, clearing marks on all cities
+Calling getCityNum for originCity and destinationCity
+destinationNumber = 8, originNumber = 4
+Pushing originCity on to empty stack and marking as visited
+topCity = Buffalo
+topCityNum gets originNumber
+
+begin while loop... will loop until stack is empty or destination is found
+Stack at beginning of loop: 
+Buffalo
+nextCity = Cincinnati
+nextCityNum = 6
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Cincinnati, 6
+Stack at beginning of loop: 
+Buffalo -> Cincinnati
+nextCity = Honolulu
+nextCityNum = 15
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Honolulu, 15
+Stack at beginning of loop: 
+Buffalo -> Cincinnati -> Honolulu
+nextCity = Houston
+nextCityNum = 16
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Houston, 16
+Stack at beginning of loop: 
+Buffalo -> Cincinnati -> Honolulu -> Houston
+nextCity = Glendale
+nextCityNum = 14
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Glendale, 14
+Stack at beginning of loop: 
+Buffalo -> Cincinnati -> Honolulu -> Houston -> Glendale
+nextCity =  
+nextCityNum = -1
+begin while loop... will loop until nextCity is a city that has not already been visited
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Houston, 16
+Stack at beginning of loop: 
+Buffalo -> Cincinnati -> Honolulu -> Houston
+nextCity = Glendale
+nextCityNum = 14
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Glendale, new nextCity = Cleveland
+new nextCityNum = 7
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Cleveland, 7
+Stack at beginning of loop: 
+Buffalo -> Cincinnati -> Honolulu -> Houston -> Cleveland
+nextCity = Houston
+nextCityNum = 16
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Houston, new nextCity =  
+new nextCityNum = -1
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+No more possible flights for top city, popping city from stack
+checking if stack is empty
+topCity and topCityNum have new values: Houston, 16
+Stack at beginning of loop: 
+Buffalo -> Cincinnati -> Honolulu -> Houston
+nextCity = Glendale
+nextCityNum = 14
+begin while loop... will loop until nextCity is a city that has not already been visited
+visited = 1
+visitedCity = Glendale, new nextCity = Cleveland
+new nextCityNum = 7
+visited = 1
+visitedCity = Cleveland, new nextCity = Columbia
+new nextCityNum = 8
+visited = 0
+end while loop
+checking to see if at end of city's possible flights list
+Top city has more possible flights, pushing nextCity onto stack and marking as visited
+checking if stack is empty
+topCity and topCityNum have new values: Columbia, 8
+end while loop
+Destination city was found, final path: 
+Buffalo -> Cincinnati -> Honolulu -> Houston -> Columbia

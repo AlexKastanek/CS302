@@ -1,0 +1,213 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <vector>
+#include "FlightMap.v1.h"
+#include "FlightMap.v2.h"
+//#include "stack.h"
+
+using namespace std;
+
+int main() 
+{
+
+	Map1 firstMap;
+	Map2 secondMap;
+	char* cityFile = new char[20];
+	char* flightFile = new char[20];
+	char* requestFile = new char[20];
+	bool goodInput = false;
+
+	cout << "Please enter the name of the city file: ";
+	while(!goodInput)
+	{
+		cin >> cityFile;
+		ifstream fin;
+		fin.open(cityFile);
+		if (fin.is_open())
+		{
+			goodInput = true;
+		} else
+		{
+			fin.close();
+			cout << "Error: File does not exist, please enter a correct filename: ";
+		}
+	}
+	goodInput = false;
+	cout << "Please enter the name of the flight file: ";
+	while(!goodInput)
+	{
+		cin >> flightFile;
+		ifstream fin;
+		fin.open(flightFile);
+		if (fin.is_open())
+		{
+			goodInput = true;
+		} else
+		{
+			fin.close();
+			cout << "Error: File does not exist, please enter a correct filename: ";
+		}
+	}
+	goodInput = false;
+	cout << "Please enter the name of the request file: ";
+	while(!goodInput)
+	{
+		cin >> requestFile;
+		ifstream fin;
+		fin.open(requestFile);
+		if (fin.is_open())
+		{
+			goodInput = true;
+		} else
+		{
+			fin.close();
+			cout << "Error: File does not exist, please enter a correct filename: ";
+		}
+	}
+	goodInput = false;
+
+	firstMap.getInput(cityFile, flightFile, requestFile);
+
+	firstMap.getAdjacencyVector();
+
+	firstMap.outputPath();
+
+	secondMap.getInput(cityFile, flightFile, requestFile);
+
+	secondMap.getAdjacencyVector();
+
+	secondMap.outputPath();
+
+	return 0;
+///////////////////////////////////////////////////////////////////////////////////
+
+	ifstream fin;
+
+	fin.open("cityFile.txt");
+	int numOfCities = 0;
+	string currentLine;
+	while (getline(fin, currentLine))
+	{
+		numOfCities++;
+	}
+	fin.close();
+	
+	//cout << numOfCities << endl;
+
+	string* cities = new string[numOfCities];
+	fin.open("cityFile.txt");
+	for (int i = 0; i < numOfCities; i++)
+	{
+		getline(fin, cities[i]);
+	}
+	/*for (int i = 0; i < numOfCities; i++)
+	{
+		cout << cities[i] << endl;
+	}*/
+	fin.close();
+
+	fin.open("flightFile.txt");
+	int numOfFlights = 0;
+	string curLine;
+	while (getline(fin, curLine))
+	{
+		numOfFlights++;
+	}
+	cout << numOfFlights << endl;
+	fin.close();
+
+	fin.open("flightFile.txt");
+	string* source = new string[numOfFlights];
+	string* destination = new string[numOfFlights];
+	int* flightNumber = new int[numOfFlights];
+	int* price = new int[numOfFlights];
+	for (int i = 0; i < numOfFlights; i++)
+	{
+		//int i = 0;
+		fin >> source[i];
+		if (source[i].at(source[i].size() - 1) != ',')
+		{
+			string remainingString;
+			fin >> remainingString;
+			source[i].append(" ");
+			source[i].append(remainingString);
+		}
+		source[i].erase(source[i].end() - 1);
+		fin >> destination[i];
+		char whiteSpace, nextCharacter;
+		fin.get(whiteSpace);
+		fin.get(nextCharacter);
+		fin.unget();
+		//cout << nextCharacter << endl;
+		if (nextCharacter >= 'A')
+		{
+			//fin.unget();
+			string remainingString;
+			fin >> remainingString;
+			destination[i].append(" ");
+			destination[i].append(remainingString);
+		}
+		//fin.unget();
+		fin >> flightNumber[i];
+		fin >> price[i];
+	}
+
+	/*for (int i = 0; i < numOfFlights; i++)
+	{
+		cout << source[i] << " ";
+		cout << destination[i] << " ";
+		cout << flightNumber[i] << " ";
+		cout << price[i] << endl;
+	}*/
+
+/////////////////////////////////////////////////////////////////////////////////
+
+	vector<string>* flights = new vector<string>[numOfCities];
+
+	for(int i = 0; i < numOfCities; i++)
+	{
+		flights[i].push_back(cities[i]);
+		//cout << cities[i] << endl;
+	}
+
+	for(int i = 0; i < numOfCities; i++)
+	{
+		for(int j = 0; j < numOfFlights; j++)
+		{
+			//cout << cities[i] << "," << source[j] << endl;
+			if (cities[i].compare(source[j]) == 0)
+			{
+				//cout << cities[i] << "," << source[j] << endl;
+				flights[i].push_back(destination[j]);
+			}
+		}
+	}
+
+	for(int i = 0; i < numOfCities; i++)
+	{
+		for(int j = 0; j < flights[i].size(); j++)
+		{
+			cout << flights[i][j] << ",";
+		}
+		cout << endl;
+	}
+
+	return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

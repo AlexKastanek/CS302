@@ -1,0 +1,107 @@
+#include "mergeSort.h"
+
+MergeSort::MergeSort()
+{
+
+	numberOfComparisons = 0;
+	numberOfSwaps = 0;
+
+}
+
+MergeSort::~MergeSort()
+{
+
+
+
+}
+
+void MergeSort::sort(int* data, int first, int last)
+{
+
+	if (first < last)
+	{
+		numberOfSwaps++;
+		int mid = first + (last - first) / 2;
+		sort(data, first, mid);
+		sort(data, mid + 1, last);
+		merge(data, first, mid, last);
+	}
+
+	numberOfComparisons++;
+
+}
+
+void MergeSort::merge(int* data, int first, int mid, int last)
+{
+
+	int tempData[last + 1];
+
+	int first1 = first;
+	int last1 = mid;
+	int first2 = mid + 1;
+	int last2 = last;
+
+	int index = first1;
+	while ((first1 <= last1) && (first2 <= last2))
+	{
+		if (data[first1] <= data[first2])
+		{
+			tempData[index] = data[first1];
+			first1++;
+		}
+		else
+		{
+			tempData[index] = data[first2];
+			first2++;
+		}
+		index++;
+	}
+
+	while (first1 <= last1)
+	{
+		tempData[index] = data[first1];
+		first1++;
+		index++;
+	}
+	while (first2 <= last2)
+	{
+		tempData[index] = data[first2];
+		first2++;
+		index++;
+	}
+
+	for (int i = first; i <= last; i++)
+	{
+		data[i] = tempData[i];
+	}
+
+}
+
+int MergeSort::getComparisonNum()
+{
+	return numberOfComparisons;
+}
+
+int MergeSort::getSwapNum()
+{
+	return numberOfSwaps;
+}
+
+void MergeSort::reset()
+{
+	numberOfComparisons = 0;
+	numberOfSwaps = 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

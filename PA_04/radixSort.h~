@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+class RadixSort
+{
+
+	public:
+			RadixSort();
+			~RadixSort();
+
+			void sort(int* data, int size, int digits);
+
+			int getComparisonNum();
+			int getSwapNum();
+
+	private:
+			int numberOfComparisons;
+			int numberOfSwaps;
+
+};

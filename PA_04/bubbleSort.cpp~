@@ -1,0 +1,126 @@
+// Class Implemntation File Information ///////////////////////////////////////
+/**
+  * @file bubbleSort.cpp
+  *
+  * @brief Implementation file for BubbleSort class
+  *
+  * @author Alex Kastanek
+  *
+  * @details Implements all member methods of the BubbleSort class
+  *
+  * @version 1.00
+  *  		 C.S. Student (1 November 2016)
+  *			 Initial development and testing of BubbleSort class
+  *
+  * @note Requires bubbleSort.h
+  *
+  * @note None
+  *
+  */
+
+#include "bubbleSort.h"
+
+/**
+  * @brief Constructor for class BubbleSort
+  *
+  * @details Able to construct a BubbleSort object
+  *
+  * @pre None
+  *
+  * @post None
+  *
+  * @par None
+  *
+  * @param None
+  *
+  * @exception None
+  *
+  * @note: None
+  */
+BubbleSort::BubbleSort()
+{
+
+	sorted = false;
+	numberOfComparisons = 0;
+	numberOfSwaps = 0;
+
+}
+
+/**
+  * @brief Destructor for class BubbleSort
+  *
+  * @details Able to destruct a BubbleSort object
+  *
+  * @pre None
+  *
+  * @post None
+  *
+  * @par None
+  *
+  * @param None
+  *
+  * @exception None
+  *
+  * @note: deleting these pointers causes a seg fault
+  */
+BubbleSort::~BubbleSort()
+{
+
+
+
+}
+
+void BubbleSort::sort(int* data, int size)
+{
+
+	sorted = false;
+	numberOfComparisons = 1;
+	numberOfSwaps = 1;
+	while (!sorted && (numberOfComparisons < size))
+	{
+		sorted = true;
+		for(int i = 0; i < size - numberOfComparisons; i++)
+		{
+			if (data[i] > data[i + 1])
+			{
+				swap(data, data[i], data[i + 1]);
+				sorted = false;
+				numberOfSwaps++;
+			}
+		}
+		numberOfComparisons++;
+	}
+
+	//cout << "bubble sort with " << size << " items:" << endl;
+	//cout << numberOfComparisons << " comparisons with " << numberOfSwaps << " swaps." << endl;
+
+}
+
+void BubbleSort::swap(int* data, int &a, int &b)
+{
+
+	int temp = a;
+	a = b;
+	b = temp;
+
+}
+
+int BubbleSort::getComparisonNum()
+{
+	return numberOfComparisons;
+}
+
+int BubbleSort::getSwapNum()
+{
+	return numberOfSwaps;
+}
+
+
+
+
+
+
+
+
+
+

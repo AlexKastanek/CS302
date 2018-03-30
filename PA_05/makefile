@@ -1,0 +1,27 @@
+all: test
+test: main.cpp Queue.o LinkedListQueue.o Event.o RadixSort.o Simulation1.o Simulation2.o Simulation3.o SimulationLinked1.o SimulationLinked2.o SimulationLinked3.o Customer.o
+	g++ main.cpp Queue.o LinkedListQueue.o Event.o RadixSort.o Simulation1.o Simulation2.o Simulation3.o Customer.o SimulationLinked1.o SimulationLinked2.o SimulationLinked3.o -o test
+Queue.o: Queue.cpp
+	g++ -c Queue.cpp
+LinkedListQueue.o: LinkedListQueue.cpp
+	g++ -c LinkedListQueue.cpp
+Event.o: Event.cpp
+	g++ -c Event.cpp
+RadixSort.o: RadixSort.cpp
+	g++ -c RadixSort.cpp
+Simulation1.o: Simulation1.cpp
+	g++ -c Simulation1.cpp
+Simulation2.o: Simulation2.cpp
+	g++ -c Simulation2.cpp
+Simulation3.o: Simulation3.cpp
+	g++ -c Simulation3.cpp
+SimulationLinked1.o: SimulationLinked1.cpp
+	g++ -c SimulationLinked1.cpp
+SimulationLinked2.o: SimulationLinked2.cpp
+	g++ -c SimulationLinked2.cpp
+SimulationLinked3.o: SimulationLinked3.cpp
+	g++ -c SimulationLinked3.cpp
+Customer.o: Customer.cpp
+	g++ -c Customer.cpp
+clean:
+	rm -rf *.o test

@@ -1,0 +1,140 @@
+--------------------------------------------------------------------------------
+
+Request is to fly from Los Angeles to Houston.
+
+HPAir flies from Los Angeles to Houston by taking the following path:
+Los Angeles -> Miami (flight#: 823) 
+Miami -> Atlanta (flight#: 774) 
+Atlanta -> Chicago (flight#: 701) 
+Chicago -> Houston (flight#: 708) 
+
+Complete Path: Los Angeles -> Miami -> Atlanta -> Chicago -> Houston
+Total Cost: $720.00
+
+--------------------------------------------------------------------------------
+
+Request is to fly from Glendale to Houston.
+
+Sorry. HPAir does not fly from Glendale to Houston.
+
+--------------------------------------------------------------------------------
+
+Request is to fly from Dallas to Austin.
+
+Sorry. HPAir does not fly from Dallas to Austin.
+
+--------------------------------------------------------------------------------
+
+Request is to fly from Paris to New York.
+
+Sorry. HPAir does not serve both Paris and New York.
+
+--------------------------------------------------------------------------------
+
+Request is to fly from Cleveland to Chicago.
+
+HPAir flies from Cleveland to Chicago by taking the following path:
+Cleveland -> Houston (flight#: 709) 
+Houston -> Chicago (flight#: 808) 
+
+Complete Path: Cleveland -> Houston -> Chicago
+Total Cost: $305.00
+
+--------------------------------------------------------------------------------
+
+Request is to fly from Indianapolis to San Francisco.
+
+HPAir flies from Indianapolis to San Francisco by taking the following path:
+Indianapolis -> Los Angeles (flight#: 809) 
+Los Angeles -> San Francisco (flight#: 819) 
+
+Complete Path: Indianapolis -> Los Angeles -> San Francisco
+Total Cost: $268.00
+
+--------------------------------------------------------------------------------
+
+Request is to fly from San Francisco to Washington.
+
+HPAir flies from San Francisco to Washington by taking the following path:
+San Francisco -> Los Angeles (flight#: 824) 
+Los Angeles -> Washington (flight#: 541) 
+
+Complete Path: San Francisco -> Los Angeles -> Washington
+Total Cost: $442.00
+
+--------------------------------------------------------------------------------
+
+Request is to fly from Paris to Los Angeles.
+
+Sorry. HPAir does not serve Paris.
+
+--------------------------------------------------------------------------------
+
+Request is to fly from Boston to Columbia.
+
+HPAir flies from Boston to Columbia by taking the following path:
+Boston -> Chicago (flight#: 504) 
+Chicago -> Houston (flight#: 708) 
+Houston -> Columbia (flight#: 802) 
+
+Complete Path: Boston -> Chicago -> Houston -> Columbia
+Total Cost: $263.00
+
+--------------------------------------------------------------------------------
+
+Request is to fly from Miami to Denver.
+
+HPAir flies from Miami to Denver by taking the following path:
+Miami -> Atlanta (flight#: 774) 
+Atlanta -> Chicago (flight#: 701) 
+Chicago -> Houston (flight#: 708) 
+Houston -> Denver (flight#: 807) 
+
+Complete Path: Miami -> Atlanta -> Chicago -> Houston -> Denver
+Total Cost: $776.00
+
+--------------------------------------------------------------------------------
+
+Request is to fly from Miami to Boise.
+
+HPAir flies from Miami to Boise by taking the following path:
+Miami -> Atlanta (flight#: 774) 
+Atlanta -> Chicago (flight#: 701) 
+Chicago -> Boise (flight#: 703) 
+
+Complete Path: Miami -> Atlanta -> Chicago -> Boise
+Total Cost: $646.00
+
+--------------------------------------------------------------------------------
+
+Request is to fly from Reno to Houston.
+
+Sorry. HPAir does not fly from Reno to Houston.
+
+--------------------------------------------------------------------------------
+
+Request is to fly from San Francisco to Chicago.
+
+HPAir flies from San Francisco to Chicago by taking the following path:
+San Francisco -> Los Angeles (flight#: 824) 
+Los Angeles -> Miami (flight#: 823) 
+Miami -> Atlanta (flight#: 774) 
+Atlanta -> Chicago (flight#: 701) 
+
+Complete Path: San Francisco -> Los Angeles -> Miami -> Atlanta -> Chicago
+Total Cost: $712.00
+
+--------------------------------------------------------------------------------
+
+Request is to fly from Buffalo to Columbia.
+
+HPAir flies from Buffalo to Columbia by taking the following path:
+Buffalo -> Cincinnati (flight#: 666) 
+Cincinnati -> Honolulu (flight#: 420) 
+Honolulu -> Houston (flight#: 786) 
+Houston -> Columbia (flight#: 802) 
+
+Complete Path: Buffalo -> Cincinnati -> Honolulu -> Houston -> Columbia
+Total Cost: $14.00
+
+--------------------------------------------------------------------------------

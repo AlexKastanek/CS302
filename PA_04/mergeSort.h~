@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+class MergeSort
+{
+
+	public:
+			MergeSort();
+			~MergeSort();
+
+			void sort(int* data, int first, int last);
+			void merge(int* data, int first, int mid, int last);
+			void swap(int* data, int &a, int &b);
+
+			int getComparisonNum();
+			int getSwapNum();
+			void reset();
+
+	private:
+			int numberOfComparisons;
+			int numberOfSwaps;
+
+};
